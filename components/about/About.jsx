@@ -6,10 +6,11 @@ const aboutAuthor = {
   profil: "/img/avatar.jpg",
   name: "Mamadou NIANG",
   job: "Full Stack Developer",
-  bio: `I'm a Tunisian based web designer & front-end developer focused on
-    crafting clean & user-friendly experiences, I am passionate about
-    building excellent software that improves the lives of those
-    around me.`,
+  bio: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Tellus id interdum velit laoreet id donec. 
+  Elit sed vulputate mi sit amet mauris commodo. 
+  Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. 
+  Curabitur vitae nunc sed velit dignissim. Eu nisl nunc mi ipsum faucibus vitae.`,
   age: 26,
   email: "ryuzvki@outlook.com",
   address: "Dakar, Sénégal",
