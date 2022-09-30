@@ -1,3 +1,6 @@
+/* Style Scss */
+
+
 /*====================================================
 
 	Table of Content:
@@ -847,7 +850,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 
 .about-name{
 	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: 700;
 	letter-spacing: 5px;
 	text-transform: uppercase;
@@ -987,6 +990,7 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	line-height: 75px;
 	text-align: center;
 	margin-top: 0 !important;
+
 }
 
 .about-social a{

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <>
       <div
-        className="site-header  image-bg parallax-section"
+        className="site-header top-section image-bg parallax-section top-section-single top-section-home"
         style={{
           backgroundImage: `url(${heroContent.heroBg})`,
           backgroundPosition: "center top",

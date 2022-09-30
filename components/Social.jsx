@@ -1,14 +1,14 @@
 const SocialShare = [
   {
-    iconName: "fa fa-facebook",
+    iconName: "fa-brands fa-facebook",
     link: "https://www.facebook.com/",
   },
-  { iconName: "fa fa-twitter", link: "https://twitter.com/" },
+  { iconName: "fa-brands fa-twitter", link: "https://twitter.com/" },
   {
-    iconName: "fa fa-youtube",
+    iconName: "fa-brands fa-youtube",
     link: "https://www.youtube.com/",
   },
-  { iconName: "fa fa-dribbble", link: "https://dribbble.com/" },
+  { iconName: "fa-brands fa-dribbble", link: "https://dribbble.com/" },
 ];
 
 const Social = () => {
@@ -16,8 +16,8 @@ const Social = () => {
     <div className="about-social">
       {SocialShare.map((val, i) => {
         return (
-          <a key={i} href={`${val.link}`}>
-            <i className={`${val.iconName}`}></i>
+          <a key={i} href={`${val.link}`} className="waves-effect  waves-light">
+            <span className={`${val.iconName}`}></span>
           </a>
         );
       })}
