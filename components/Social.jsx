@@ -1,14 +1,24 @@
 const SocialShare = [
   {
-    iconName: "fa-brands fa-facebook",
-    link: "https://www.facebook.com/",
+    iconName: "fa-brands fa-github",
+    link: "https://github.com/ryuzvki221/",
   },
-  { iconName: "fa-brands fa-twitter", link: "https://twitter.com/" },
   {
-    iconName: "fa-brands fa-youtube",
-    link: "https://www.youtube.com/",
+    iconName: "fa-brands fa-linkedin",
+    link: "https://www.linkedin.com/in/ryuzvki/",
   },
-  { iconName: "fa-brands fa-dribbble", link: "https://dribbble.com/" },
+  { 
+    iconName: "fa-brands fa-twitter", 
+    link: "https://twitter.com/ryuzvki_sn/" },
+  {
+    iconName: "fa-brands fa-twitch",
+    link: "https://www.twitch.tv/ryuzvki_sn/",
+  },
+  {
+    iconName: "fa-brands fa-instagram",
+    link: "https://www.instagram.com/ryuzvki/",
+  },
+  { iconName: "fa-brands fa-paypal", link: "https://paypal.me/ryuzaki221/" },
 ];
 
 const Social = () => {
