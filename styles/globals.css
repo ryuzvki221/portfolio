@@ -1872,11 +1872,11 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	padding: 10px;
 }
 
-.client-carousel .owl-item{
+.client-carousel .item{
 	padding: 25px;
 }
 
-.client-carousel .owl-item img{
+.client-carousel .item img{
 	opacity: 0.7;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -1885,8 +1885,11 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 	transition: all 0.3s;
 }
 
-.client-carousel .owl-item:hover img{
+.client-carousel .item:hover img{
 	opacity: 1;
+}
+.slick-prev:before, .slick-next:before{
+	display: none;
 }
 
 

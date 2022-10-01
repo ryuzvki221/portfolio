@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import AOS from "aos";
-// import aos styles
-import "aos/dist/aos.css";
+
 import "../styles/globals.css";
 import "../styles/main.scss";
 
