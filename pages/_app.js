@@ -19,6 +19,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Ryuzvki" />
         <meta name="description" content="My Personal Website." />
         <meta name="viewport" content="viewport-fit=cover" />
+        <link rel="icon" href="/favicon.ico" />
         <title>Portfolio</title>
       </Head>
       <Component {...pageProps} />

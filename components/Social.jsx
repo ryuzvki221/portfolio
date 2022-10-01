@@ -1,37 +1,30 @@
-const SocialShare = [
-  {
-    iconName: "fa-brands fa-github",
-    link: "https://github.com/ryuzvki221/",
-  },
-  {
-    iconName: "fa-brands fa-linkedin",
-    link: "https://www.linkedin.com/in/ryuzvki/",
-  },
-  { 
-    iconName: "fa-brands fa-twitter", 
-    link: "https://twitter.com/ryuzvki_sn/" },
-  {
-    iconName: "fa-brands fa-twitch",
-    link: "https://www.twitch.tv/ryuzvki_sn/",
-  },
-  {
-    iconName: "fa-brands fa-instagram",
-    link: "https://www.instagram.com/ryuzvki/",
-  },
-  { iconName: "fa-brands fa-paypal", link: "https://paypal.me/ryuzaki221/" },
-];
+import React, { useState, useEffect } from "react";
 
 const Social = () => {
+  const request = "/api/v1/social/";
+  const [social, fetchSocial] = useState([]);
+
+  useEffect(() => {
+    const getSocial = async () => {
+      await fetch(request)
+        .then((response) => response.json())
+        .then((social) => {
+          fetchSocial(social);
+          // console.log(social);
+        });
+    };
+    getSocial();
+  }, [request]);
   return (
-    <div className="about-social">
-      {SocialShare.map((val, i) => {
+    <>
+      {social.map((val, i) => {
         return (
           <a key={i} href={`${val.link}`} className="waves-effect  waves-light">
             <span className={`${val.iconName}`}></span>
           </a>
         );
       })}
-    </div>
+    </>
   );
 };
 

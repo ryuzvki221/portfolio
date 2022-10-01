@@ -86,6 +86,7 @@ textarea:hover:-moz-placeholder{color: #666666 !important;}
 textarea:hover::-moz-placeholder {color: #666666 !important;}
 textarea:hover:-ms-input-placeholder{color: #666666 !important;}
 
+.ff-poppins {font-family: "Poppins", "sans-serif" !important;}
 .ff-dosis{font-family: 'Dosis', 'Open Sans', 'Sans Serif'  !important;}
 .ff-opensans{font-family: 'Open Sans', 'Sans Serif'  !important;}
 .fs-italic{font-style: italic !important;}
@@ -849,7 +850,6 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 }
 
 .about-name{
-	font-family: 'Dosis', 'Open Sans', 'Sans Serif' !important;
 	font-size: 28px;
 	font-weight: 700;
 	letter-spacing: 5px;

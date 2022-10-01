@@ -1,0 +1,37 @@
+{
+  "id": "service-section",
+  "title": "I am good at",
+  "data": [
+    {
+      "icon": "fa fa-desktop",
+      "title": "Front end developement",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa fa-cubes",
+      "title": "Back end Development",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa fa-mobile",
+      "title": "Mobile Development",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa fa-server",
+      "title": "Web hosting",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa fa-database",
+      "title": "Databases",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa fa-code-branch",
+  
+      "title": "DevOps",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}
