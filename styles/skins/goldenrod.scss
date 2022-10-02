@@ -50,8 +50,15 @@ $base-color: #daa520;
 .search-submit,
 .error-section a,
 .error-section a:hover,
-.owl-theme .owl-dots .owl-dot span{
-	background-color: $base-color !important;
+.experience-box .experience-icon,
+.experience-box .experience-time,
+.experience-box .place:before,
+.owl-theme .owl-dots .owl-dot span {
+  background-color: $base-color !important;
+}
+.experience-box li:after{
+  border-left: 1px solid $base-color !important;
+  
 }
 
 .btn-custom:hover,
