@@ -11,7 +11,6 @@ export default function About() {
         .then((response) => response.json())
         .then((author) => {
           fetchAuthor(author);
-          // console.log(author);
         });
     };
     getAuthor();
@@ -26,7 +25,8 @@ export default function About() {
               <div
                 className={"col s12"}
                 data-aos={"fade-up"}
-                data-aos-delay={"500"}
+                data-aos-duration={"1200"}
+              data-aos-delay={"100"}
               >
                 <div className="col s12 w-block shadow-bg pd-0 ">
                   <div className="col s12 l5 about-img al-center pd-50 ">

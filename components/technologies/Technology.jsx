@@ -32,13 +32,6 @@ const settings = {
         slidesToScroll: 1,
       },
     },
-    {
-      breakpoint: 0,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
   ],
 };
 
@@ -64,7 +57,12 @@ export default function Technology() {
             <div className="col s12 section-title">
               <h2>{technologies.title}</h2>
             </div>
-            <div className="col s12 client-wrapper" data-aos="fade-in">
+            <div
+              className="col s12 client-wrapper"
+              data-aos="fade-in"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+            >
               <div className="col s12 client-carousel w-block shadow-bg pd-0">
                 {technologies.items && (
                   <Slider {...settings}>

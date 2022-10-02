@@ -10,7 +10,6 @@ export default function Service() {
         .then((response) => response.json())
         .then((service) => {
           fetchService(service);
-          // console.log(service.data);
         });
     };
     getService();
