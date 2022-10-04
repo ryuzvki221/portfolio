@@ -8,6 +8,7 @@ const nextConfig = {
     includePaths: [path.join(__dirname, "styles")],
   },
 
+
   /**
    * Tell Next.js where the `public` folder is.
    * Replace `nextjs-github-pages` with your Github repo project name.
@@ -22,5 +23,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+
 };
 module.exports = nextConfig;

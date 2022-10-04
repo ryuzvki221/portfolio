@@ -4,16 +4,19 @@
 @import "./header.scss";
 
 // Static properties
-@import url("https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700");
 @import url("./css/css.css");
 @import url("./css/css_002.css");
 @import url("./css/css_003.css");
 @import url("./css/img-comparison.css");
 @import url("./css/responsive.css");
+
+
+//Materialize css
+@import url("~materialize-css/dist/css/materialize.min.css");
+
+//Font awesome
+@import url("~font-awesome/css/font-awesome.min.css");
+
 
 //Slick Carousel
 @import url("~slick-carousel/slick/slick.css");
@@ -21,3 +24,8 @@
 
 // import aos styles
 @import url("aos/dist/aos.css");
+
+
+// google font
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700");

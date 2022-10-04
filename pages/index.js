@@ -10,7 +10,7 @@ import Experience from "../components/timeline/Experience";
 
 const menuItem = [
   { icon: "fa fa-home", menuName: "Home" },
-  { id: "service-section", icon: "fa fa-mug-saucer", menuName: "Skills" },
+  { id: "service-section", icon: "fa fa-coffee", menuName: "Skills" },
   { id: "technologies-section", icon: "fa fa-gears", menuName: "Technologies" },
   { id: "experience-section", icon: "fa fa-briefcase", menuName: "Experience" },
   {
