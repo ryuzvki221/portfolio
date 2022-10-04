@@ -17,8 +17,6 @@ export default function Education() {
 
   // is mobile
 
-  
-
   const isMobile = () => window.innerWidth <= 600;
   return (
     <>
@@ -41,9 +39,7 @@ export default function Education() {
                             : ""
                         }
                         data-aos={
-                          !item.position === "right" && !isMobile()
-                            ? "fade-left"
-                            : "fade-right"
+                          item.position === "right" ? "fade-left" : "fade-right"
                         }
                       >
                         <div className="timeline-badge">
