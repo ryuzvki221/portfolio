@@ -4,8 +4,8 @@
   "homepage": "https://ryuzvki221.github.io/portfolio/",
   "private": true,
   "scripts": {
-    "build:github": "npm build --prod --base-href \"/portfolio/\"",
-    "deploy:github": "gh-pages --dir=build/portfolio",
+    "build:github": "npm run build",
+    "deploy:github": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
