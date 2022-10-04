@@ -1,16 +1,12 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://ryuzvki221.github.io/portfolio/",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d out",
     "dev": "next dev",
-    "build": "npm run eslint && next build",
-    "export": "next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "eslint": "eslint ."
+    "lint": "next lint"
   },
   "dependencies": {
     "aos": "^2.3.4",
@@ -28,7 +24,6 @@
     "@types/aos": "^3.0.4",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
-    "gh-pages": "^4.0.0",
     "sass": "^1.55.0"
   }
 }
