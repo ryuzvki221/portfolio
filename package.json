@@ -2,6 +2,8 @@
   "name": "portfolio",
   "version": "0.1.0",
   "homepage": "https://ryuzvki221.github.io/portfolio/",
+  "build:github": "npm run build && npm run export && touch out/.nojekyll && cp CNAME out/CNAME ",
+  "deploy:github": "gh-pages -d out",
   "private": true,
   "scripts": {
     "dev": "next dev",
