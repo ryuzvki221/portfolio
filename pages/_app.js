@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
-      offset: 100,
+      once: true, // whether animation should happen only once - while scrolling down
     });
     // Preloading is enabled
     setLoading(true);
@@ -27,7 +27,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <title>Portfolio</title>
       </Head>
       {!loading ? (
