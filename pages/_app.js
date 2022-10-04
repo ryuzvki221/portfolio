@@ -1,27 +1,42 @@
 import Head from "next/head";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
-// import aos styles
-import "aos/dist/aos.css";
+import LoadingScreen from "../components/loadingscreen";
+
 import "../styles/globals.css";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
       offset: 100,
     });
+    // Preloading is enabled
+    setLoading(true);
+    setTimeout(() => setLoading(false), 5000);
   }, []);
+
   return (
     <>
       <Head>
         <meta name="author" content="Ryuzvki" />
         <meta name="description" content="My Personal Website." />
         <meta name="viewport" content="viewport-fit=cover" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"  crossOrigin="true" />
         <title>Portfolio</title>
       </Head>
-      <Component {...pageProps} />
+      {!loading ? (
+        <React.Fragment>
+          <Component {...pageProps} />
+        </React.Fragment>
+      ) : (
+        <LoadingScreen />
+      )}
     </>
   );
 }

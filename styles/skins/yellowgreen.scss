@@ -6,6 +6,9 @@ $base-color: #9acd32;
 .backdrop,
 .material-tooltip,
 .header .menu-bar,
+.header .icon-box h2,
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover,
 .main-nav .menu-close,
 .header .search-open,
 .main-nav a::after,
@@ -21,6 +24,7 @@ $base-color: #9acd32;
 .progress-bar > span,
 .timeline-title::after,
 .filter li a::after,
+.preloader .loader,
 .portfolio-intro-image a,
 .portfolio-intro-image a:hover,
 .portfolio-intro-detail a,
@@ -50,8 +54,15 @@ $base-color: #9acd32;
 .search-submit,
 .error-section a,
 .error-section a:hover,
+.experience-box .experience-icon,
+.experience-box .experience-time,
+.experience-box .place:before,
 .owl-theme .owl-dots .owl-dot span {
   background-color: $base-color !important;
+}
+.experience-box li:after{
+  border-left: 1px solid $base-color !important;
+  
 }
 
 .btn-custom:hover,

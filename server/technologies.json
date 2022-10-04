@@ -1,0 +1,17 @@
+{
+  "id": "technologies-section",
+  "title": "Technologies",
+  "items": [
+    { "name": "HTML", "image": "/img/tech/html.png" },
+    { "name": "CSS", "image": "/img/tech/css.png" },
+    { "name": "JavaScript", "image": "/img/tech/js.png" },
+    { "name": "TypeScript", "image": "/img/tech/ts.png" },
+    { "name": "Bootstrap", "image": "/img/tech/bootstrap.png" },
+    { "name": "Materialize", "image": "/img/tech/materialize-css.png" },
+    { "name": "Wordpress", "image": "/img/tech/wordpress.png" },
+    { "name": "Angular", "image": "/img/tech/angular.png" },
+    { "name": "React", "image": "/img/tech/react.png" },
+    { "name": "Vue", "image": "/img/tech/vue.png" },
+    { "name": "Node.js", "image": "/img/tech/nodejs.png" }
+  ]
+}
