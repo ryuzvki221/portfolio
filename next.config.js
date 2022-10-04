@@ -13,6 +13,7 @@ const nextConfig = {
    * Replace `nextjs-github-pages` with your Github repo project name.
    */
   assetPrefix: isProd ? "/portfolio/" : "",
+  basePath: isProd ? "/portfolio/" : "",
   /**
    * Disable server-based image optimization.
    *
