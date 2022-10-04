@@ -4,7 +4,6 @@
   "homepage": "https://ryuzvki221.github.io/portfolio/",
   "private": true,
   "scripts": {
-    "build:github": "npm run build && npm run export",
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
