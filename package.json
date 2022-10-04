@@ -1,8 +1,11 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://ryuzvki221.github.io/portfolio/",
   "private": true,
   "scripts": {
+    "build:github": "npm build --prod --base-href \"/portfolio/\"",
+    "deploy:github": "gh-pages --dir=build/portfolio",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -21,6 +24,7 @@
     "@types/aos": "^3.0.4",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "gh-pages": "^4.0.0",
     "sass": "^1.55.0"
   }
 }
