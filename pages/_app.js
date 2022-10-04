@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
-import LoadingScreen from "../components/loadingscreen";
+import LoadingScreen from "../components/loadingScreen/LoadingScreen";
 
 import "../styles/globals.css";
 import "../styles/main.scss";
