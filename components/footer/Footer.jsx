@@ -7,6 +7,10 @@ export default function Footer() {
       left: 0,
       behavior: "smooth",
     });
+    const menuItems = document.querySelectorAll(".icon-box");
+    menuItems.forEach((item) => {
+      item.classList.remove("active");
+    });
     return false;
   };
   return (

@@ -8,7 +8,7 @@ const settings = {
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 2500,
   pauseOnHover: true,
   responsive: [
     {
@@ -22,15 +22,14 @@ const settings = {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 1,
-        initialSlide: 2
+        slidesToScroll: 2,
       },
     },
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
   ],
@@ -69,16 +68,20 @@ export default function Technology() {
                   <Slider {...settings}>
                     {technologies.items.map((tech, index) => (
                       <div className="item" key={index}>
-                        <Image
-                          src={tech.image}
-                          alt={tech.title}
+                        <a
+                          id={tech.title}
                           className="tooltipped"
                           data-position="top"
                           data-delay="50"
                           data-tooltip={tech.title}
-                          width={159}
-                          height={159}
-                        />
+                        >
+                          <Image
+                            src={tech.image}
+                            alt={tech.title}
+                            width={159}
+                            height={159}
+                          />
+                        </a>
                       </div>
                     ))}
                   </Slider>

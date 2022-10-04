@@ -15,10 +15,14 @@ export default function Education() {
     getTechnologies();
   }, [request]);
 
+  // is mobile
+
+  
+
   const isMobile = () => window.innerWidth <= 600;
   return (
     <>
-      <section id={timeline.id} className={timeline.id}>
+      <section id={"education-section"} className={timeline.id}>
         <div className="container">
           <div className="row">
             <div className="col s12 section-title">
@@ -37,9 +41,9 @@ export default function Education() {
                             : ""
                         }
                         data-aos={
-                          item.position === "right" && !isMobile()
-                            ? "fade-right"
-                            : "fade-left"
+                          !item.position === "right" && !isMobile()
+                            ? "fade-left"
+                            : "fade-right"
                         }
                       >
                         <div className="timeline-badge">
@@ -56,7 +60,7 @@ export default function Education() {
                         </div>
                       </li>
                     ))}
-                    <li className="clearfix no-float"></li>
+                  <li className="clearfix no-float"></li>
                 </ul>
               </div>
             </div>

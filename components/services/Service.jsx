@@ -17,7 +17,7 @@ export default function Service() {
 
   return (
     <>
-      <section id={service.id} className="service-section">
+      <section id={service.id} className="section service-section">
         <div className="container">
           <div className="row">
             {service.title && (

@@ -6,6 +6,9 @@ $base-color: #fa5b0f;
 .backdrop,
 .material-tooltip,
 .header .menu-bar,
+.header .icon-box h2,
+.header ul.icon-menu li.icon-box.active,
+.header ul.icon-menu li.icon-box:hover,
 .main-nav .menu-close,
 .header .search-open,
 .main-nav a::after,
@@ -21,6 +24,7 @@ $base-color: #fa5b0f;
 .progress-bar > span,
 .timeline-title::after,
 .filter li a::after,
+.preloader .loader,
 .portfolio-intro-image a,
 .portfolio-intro-image a:hover,
 .portfolio-intro-detail a,
@@ -102,8 +106,8 @@ $base-color: #fa5b0f;
 .single-portfolio-demo-link a,
 .single-portfolio-demo-link a:hover,
 .single-sidebar a:hover,
-.color-scheme-select-btn{
-	color: $base-color !important;
+.color-scheme-select-btn {
+  color: $base-color !important;
 }
 
 blockquote,
@@ -114,23 +118,23 @@ blockquote,
 .c-form-input:hover,
 .c-form-input:focus,
 body .color-scheme-select,
-.color-scheme-select-btn{
-	border-color: $base-color !important;
+.color-scheme-select-btn {
+  border-color: $base-color !important;
 }
 
 body .arrow-box::before,
-.timeline-panel .timeline-time::before{
-	border-left-color: $base-color !important;
+.timeline-panel .timeline-time::before {
+  border-left-color: $base-color !important;
 }
 
 .search-form .search-field:focus:not([readonly]),
 .input-field input:focus:not([readonly]),
-.input-field textarea:focus:not([readonly]){
-	-webkit-box-shadow: 0 1px 0 0 $base-color !important;
-	-moz-box-shadow: 0 1px 0 0 $base-color !important;
-	box-shadow: 0 1px 0 0 $base-color !important;
+.input-field textarea:focus:not([readonly]) {
+  -webkit-box-shadow: 0 1px 0 0 $base-color !important;
+  -moz-box-shadow: 0 1px 0 0 $base-color !important;
+  box-shadow: 0 1px 0 0 $base-color !important;
 }
 
 .github-corner svg {
-	fill: $base-color !important;
+  fill: $base-color !important;
 }
