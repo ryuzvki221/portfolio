@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     });
     // Preloading is enabled
     setLoading(true);
-    setTimeout(() => setLoading(false), 5000);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
 
   return (
@@ -27,11 +27,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="true"
-        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <title>Portfolio</title>
       </Head>
       {!loading ? (

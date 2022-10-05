@@ -1,23 +1,12 @@
 import fs from "fs";
 import path from "path";
+import { getOrSetCache } from "../../../lib/redis";
 
-export default function handler(req, res) {
-  if (req.method === "GET") {
-    const filePath = path.join(process.cwd(), "server", "service.json");
-    const fileData = fs.readFileSync(filePath);
-    const data = JSON.parse(fileData);
-    res.status(200).json(data);
-  }
-  //else if (req.method === "POST") {
-  //     const filePath = path.join(process.cwd(), "server", "service.json");
-  //     const fileData = fs.readFileSync(filePath);
-  //     const data = JSON.parse(fileData);
-  //     const newData = req.body;
-  //     data.push(newData);
-  //     fs.writeFileSync(filePath, JSON.stringify(data));
-  //     res.status(200).json({ message: "Success" });
-  //   }
-  else {
-    res.status(400).json({ message: "Invalid request" });
-  }
+const filePath = path.join(process.cwd(), "server", "service.json");
+const fileData = fs.readFileSync(filePath);
+const data = JSON.parse(fileData);
+
+export default async function handler(req, res) {
+  const services = await getOrSetCache("services", data);
+  res.status(200).json(services);
 }
