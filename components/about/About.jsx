@@ -16,6 +16,16 @@ export default function About() {
     getAuthor();
   }, [request]);
 
+  //calcul birth date
+  const birthDate = (dateString) => {
+    const birthday = new Date(dateString);
+    const ageDifMs = Date.now() - birthday.getTime();
+    const ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getFullYear() - 1970);
+  };
+
+  const age = birthDate(author.birth);
+
   return (
     <>
       <section id="about-section" className="about-section">
@@ -26,7 +36,7 @@ export default function About() {
                 className={"col s12"}
                 data-aos={"fade-up"}
                 data-aos-duration={"1200"}
-              data-aos-delay={"100"}
+                data-aos-delay={"100"}
               >
                 <div className="col s12 w-block shadow-bg pd-0 ">
                   <div className="col s12 l5 about-img al-center pd-50 ">
@@ -45,7 +55,7 @@ export default function About() {
                         <p className="">{author.bio}</p>
                         <div>
                           <span>Age</span>
-                          {author.age}
+                          {age}
                         </div>
                         <div>
                           <span>Address</span>
