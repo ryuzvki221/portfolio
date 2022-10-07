@@ -2,23 +2,27 @@
   "id": "timeline-section",
   "experience": [
     {
-      "tag": "eCapital",
-      "title": "Full Stack Developer",
+      "tag": "Helix Technology",
+      "title": "Software Developer",
       "description": [
-        "✔ Developing & maintaining web apps/websites using Symfony, Wordpress, Angular & Firebase.",
+        "✔ Work with the development team to identify and implement software solutions.",
+        "✔ Developing & maintaining web apps/websites using Wordpress, Angular, Cpanel  & Firebase.",
         "✔ Building mobile apps with Ionic."
       ],
-      "period": "Sep. 2019 - present",
+      "period": "Jan. 2021 -- Dec. 2021",
       "position": "left"
     },
     {
-      "tag": "eCapital",
-      "title": "Full Stack Developer",
+      "tag": "Senelec",
+      "title": "Trainee Computer Technician",
       "description": [
-        "✔ Developing & maintaining web apps/websites using Symfony, Wordpress, Angular & Firebase.",
-        "✔ Building mobile apps with Ionic."
+        "✔ Supervision, helpdesk and support services.",
+        "✔ Computer maintenance.",
+        "✔ Software and operating system administration.",
+        "✔ Installation and maintenance of computer networks.",
+        "✔ Write a daily report."
       ],
-      "period": "Sep. 2019 - present",
+      "period": " Jun. 2018 -- Aug. 2018",
       "position": "right"
     }
   ],
@@ -39,27 +43,27 @@
 
   "education": [
     {
-      "tag": "University of Science and Technology Settat",
-      "title": "Professional license in application design and development",
-      "period": "2015 - 2016",
+      "tag": "Virtual University of Senegal (UVS)",
+      "title": "Master's degree in Computer Science and Mathematics of Cybersecurity",
+      "period": "2022 - Present",
       "position": "left"
     },
     {
-      "tag": "University of Science and Technology Settat",
-      "title": "Bachelor's degree in computer science",
-      "period": "2012 - 2015",
+      "tag": "Thies University",
+      "title": "Master's degree in Software engineering",
+      "period": "2020 - 2022",
       "position": "right"
     },
     {
-      "tag": "University of Science and Technology Settat",
-      "title": "Diploma in computer science",
-      "period": "2010 - 2012",
+      "tag": "Polytechnic school of Dakar",
+      "title": "Bachelor's degree in Computer science",
+      "period": "2019 - 2020",
       "position": "left"
     },
     {
-      "tag": "University of Science and Technology Settat",
-      "title": "Diploma in computer science",
-      "period": "2010 - 2012",
+      "tag": "Center for Technical and Vocational Training Senegal - Japan",
+      "title": "Higher National Diploma in Industrial IT and Networks",
+      "period": "2017 - 2019",
       "position": "right"
     }
   ]

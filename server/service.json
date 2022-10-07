@@ -5,33 +5,33 @@
     {
       "icon": "fa fa-desktop",
       "title": "Front end developement",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "Angular, React, NextJS, Jquery, VanillaJS, HTML5, CSS / SASS, JavaScript / ES6, TypeScript, Bootstrap, Materialize, Chakra UI, Responsive Design,CMS (Wordpress)"
     },
     {
       "icon": "fa fa-cubes",
       "title": "Back end Development",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "Java, Python, Node.js, Rest API, OOP, MVC, Spring Boot, Spring Data, Spring Security, Django, Flask, Express, NextJS"
     },
     {
       "icon": "fa fa-mobile",
       "title": "Mobile Development",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "Android, IOS, React Native, Flutter, Android SDK, Ionic"
     },
     {
       "icon": "fa fa-server",
       "title": "Web hosting",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "AWS, Heroku,Netlify, Vercel, Firebase, Github Pages, FTP, SSH, cPanel, Linux shell"
     },
     {
       "icon": "fa fa-database",
       "title": "Databases",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "MySQL, MongoDB, PostgreSQL, SQLite, Firebase, Redis"
     },
     {
       "icon": "fa fa-code-fork",
   
       "title": "DevOps",
-      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "desc": "Git, Github, Gitlab, Bitbucket, Docker, Kubernetes, Jenkins, Travis CI, Circle CI"
     }
   ]
 }
