@@ -1,20 +1,16 @@
 import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
-import TagManager from "react-gtm-module";
 import LoadingScreen from "../components/loadingScreen/LoadingScreen";
 
 import "../styles/globals.css";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
-  const tagManagerArgs = {
-    id: "GTM-WCCFPZV",
-  };
+
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    // Tag manager
-    TagManager.initialize(tagManagerArgs);
+
     // here you can add your aos options
     AOS.init({
       once: true, // whether animation should happen only once - while scrolling down
