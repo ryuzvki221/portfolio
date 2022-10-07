@@ -8,15 +8,13 @@ import "../styles/globals.css";
 import "../styles/main.scss";
 
 function MyApp({ Component, pageProps }) {
-
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-
     // Tag manager
-    const tagManagerArgs = {
-      gtmId: "GTM-WCCFPZV",
-    };
-    TagManager.initialize(tagManagerArgs);
+    TagManager.initialize({
+      gtmId: "GTM-WCCFPZV", // GTM ID
+    });
+
     // here you can add your aos options
     AOS.init({
       once: true, // whether animation should happen only once - while scrolling down

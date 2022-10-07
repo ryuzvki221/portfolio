@@ -18,14 +18,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=optional"
         />
-        {/*Twitter Widgets*/}
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charSet="utf-8"
-        />
-        {/* End Twitter Widgets */}
-
         {/* Global site tag (gtag.js) - Google Analytics */}
         <script
           async
