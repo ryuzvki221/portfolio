@@ -18,22 +18,31 @@ export default function Document() {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i,800,800i&display=optional"
         />
+        {/*Twitter Widgets*/}
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charSet="utf-8"
+        />
+        {/* End Twitter Widgets */}
 
         {/* Global site tag (gtag.js) - Google Analytics */}
-        <Script
+        <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_ID}`}
         />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', '${ANALYTICS_ID}');
-        `}
-        </Script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${ANALYTICS_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
         {/*End  Global site tag (gtag.js) - Google Analytics */}
 
         {/* Google Tag Manager */}
@@ -47,14 +56,6 @@ export default function Document() {
         `}
         </Script>
         {/* End Google Tag Manager */}
-
-        {/*Twitter Widgets*/}
-        <Script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charSet="utf-8"
-        ></Script>
-        {/* End Twitter Widgets */}
       </Head>
       <body>
         {/* Google Tag Manager (noscript)  */}
