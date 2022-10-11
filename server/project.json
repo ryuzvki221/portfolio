@@ -1,0 +1,70 @@
+{
+  "id": "portfolio-section",
+  "title": "Projects",
+  "data": [
+    {
+      "name": "Proxidoc",
+      "image": "/img/projects/Proxidoc.png",
+      "link": "https://proxidoc.herokuapp.com",
+      "category": ["Django", "Heroku"],
+      "group": "Web Apps"
+    },
+    {
+      "name": "Quartier Sandaga",
+      "image": "/img/projects/QuartierSandaga.png",
+      "link": "https://www.quartiersandaga.com",
+      "category": ["Wordpress", "WooCommerce"],
+      "group": "Web Apps"
+    },
+    {
+      "name": "Project One",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["NextJS", "Vercel"],
+      "group": "Desktop Apps"
+    },
+    {
+      "name": "Project Two",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["NextJS", "Vercel"],
+      "group": "Desktop Apps"
+    },
+    {
+      "name": "Project Three",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+    {
+      "name": "Project Four",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+    {
+      "name": "Project Five",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+    {
+      "name": "Project Six",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+
+    {
+      "name": "Project Seven",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    }
+  ]
+}

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Image from "next/image";
+import { initTooltip } from "../../lib/tooltips";
 
 export default function Portfolio() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const getProjects = async () => {
+      await fetch("/api/v1/projects/")
+        .then((response) => response.json())
+        .then((projects) => {
+          setProjects(projects);
+        });
+    };
+    getProjects();
+    initTooltip();
+  }, []);
+
   return (
     <>
       <section id="featured-work-section" className="portfolio-section">
@@ -12,7 +28,7 @@ export default function Portfolio() {
             </div>
             <div className="col s12">
               <Tabs className="col s12 section-content pd-0">
-                <TabList className="portfolio-tab-list">
+                <TabList className="portfolio-tab-list ">
                   <Tab>All</Tab>
                   <Tab>Web Apps</Tab>
                   <Tab>Desktop apps</Tab>
@@ -21,30 +37,118 @@ export default function Portfolio() {
                 <div className="portfolio-tab-content">
                   <TabPanel>
                     <ul className="portfolio-items">
-                      <li className="portfolio-content">all</li>
+                      {projects.data &&
+                        projects.data.map((project, index) => (
+                          <li className="portfolio-content" key={index}>
+                            <figure
+                              className="portfolio-content__inner shadow-bg"
+                              data-aos="pulse"
+                              data-aos-duration="1200"
+                              data-aos-delay="0"
+                            >
+                              <div className="aspect aspect--4x3">
+                                <div className="aspect__inner">
+                                  <Image
+                                    src={project.image}
+                                    alt={project.name}
+                                    layout="fill"
+                                    objectFit="cover"
+                                  />
+                                </div>
+                              </div>
+                              <figcaption>
+                                <div className="portfolio-intro">
+                                  <div className="portfolio-intro-category">
+                                    {project.category &&
+                                      project.category.map(
+                                        (categorie, index) => (
+                                          <p key={index}>{categorie}</p>
+                                        )
+                                      )}
+                                  </div>
+                                  <div className="portfolio-intro-title">
+                                    <a href={project.link}>{project.name}</a>
+                                  </div>
+                                  <div className="portfolio-intro-image">
+                                    <a
+                                      href={project.image}
+                                      className="btn-circle waves-effect portfolio-mfp tooltipped"
+                                      data-position="top"
+                                      data-delay="50"
+                                      data-tooltip="View Photo"
+                                    >
+                                      {" "}
+                                      <span className="fa fa-picture-o"></span>
+                                    </a>
+                                  </div>
+                                  {project.link && project.link !== "#" && (
+                                    <div className="portfolio-intro-detail">
+                                      <a
+                                        href={project.link}
+                                        className="btn-circle waves-effect tooltipped"
+                                        data-position="top"
+                                        data-delay="50"
+                                        data-tooltip="View Project"
+                                      >
+                                        <span className="fa fa-link"></span>
+                                      </a>
+                                    </div>
+                                  )}
+                                </div>
+                              </figcaption>
+                            </figure>
+                          </li>
+                        ))}
                     </ul>
                   </TabPanel>
                   {/* End All Project */}
                   <TabPanel>
                     <ul className="portfolio-items">
-                      <li className="portfolio-content">web apps</li>
+                      <li
+                        className="portfolio-content"
+                        data-aos="pulse"
+                        data-aos-duration="1200"
+                        data-aos-delay="0"
+                      ></li>
                     </ul>
                   </TabPanel>
                   {/* End Web Apps Project */}
                   <TabPanel>
                     <ul className="portfolio-items">
-                      <li className="portfolio-content">Desktop apps</li>
+                      <li
+                        className="portfolio-content"
+                        data-aos="pulse"
+                        data-aos-duration="1200"
+                        data-aos-delay="0"
+                      ></li>
                     </ul>
                   </TabPanel>
                   {/* End Desktop Apps Project */}
                   <TabPanel>
                     <ul className="portfolio-items">
-                      <li className="portfolio-content">mobile apps</li>
+                      <li
+                        className="portfolio-content"
+                        data-aos="pulse"
+                        data-aos-duration="1200"
+                        data-aos-delay="0"
+                      ></li>
                     </ul>
                   </TabPanel>
                   {/* End Mobile Apps Project */}
                 </div>
               </Tabs>
+              <div className="col s12 portfolio-all al-center">
+                <a
+                  href="#"
+                  className="btn-circle waves-effect tooltipped"
+                  data-position="top"
+                  data-delay="50"
+                  data-tooltip="More Featured Work"
+                >
+                  <span></span>
+                  <span></span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
