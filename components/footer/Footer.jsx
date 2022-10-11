@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+import { initTooltip } from "../../lib/tooltips";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -10,9 +11,20 @@ export default function Footer() {
     const menuItems = document.querySelectorAll(".icon-box");
     menuItems.forEach((item) => {
       item.classList.remove("active");
+      //active item 0
+      menuItems[0].classList.add("active");
     });
     return false;
   };
+
+  useEffect(() => {
+    // const M = typeof window !== "undefined" ? require("materialize-css") : null;
+    // // tooltipped
+    // const elems = document.querySelectorAll(".footer-tooltipped");
+    // M.Tooltip.init(elems, {});
+    initTooltip();
+  }, []);
+
   return (
     <>
       <div className="footer">

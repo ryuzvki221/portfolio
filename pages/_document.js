@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { ANALYTICS_ID } from "../lib/analytics";
-import Script from "next/script";
 
 export default function Document() {
   return (

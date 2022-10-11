@@ -87,6 +87,8 @@ $base-color: #ffb400;
 .timeline-badge > a,
 .filter li a:hover,
 .filter li a.active,
+.portfolio-tab-list li:hover,
+.portfolio-tab-list li.react-tabs__tab--selected,
 .reference-author,
 .pricing-price,
 .input-field input:focus:not([readonly]) + label,
