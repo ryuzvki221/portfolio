@@ -7,18 +7,13 @@ import Portfolio from "../components/portfolio/Portfolio";
 import Service from "../components/services/Service";
 import Technology from "../components/technologies/Technology";
 import Education from "../components/timeline/Education";
-import Experience from "../components/timeline/Experience";
 
 const menuItem = [
   { icon: "fa fa-home", menuName: "Home" },
   { id: "service-section", icon: "fa fa-coffee", menuName: "Skills" },
   { id: "technologies-section", icon: "fa fa-gears", menuName: "Technologies" },
-  { id: "experience-section", icon: "fa fa-briefcase", menuName: "Experience" },
-  {
-    id: "education-section",
-    icon: "fa fa-graduation-cap",
-    menuName: "Education",
-  },
+  { id: "education-section", icon: "fa fa-graduation-cap", menuName: "Education" },
+  { id: "portfolio-section", icon: "fa fa-briefcase", menuName: "Portfolio" },
 ];
 
 export default function Home() {
@@ -74,7 +69,6 @@ export default function Home() {
       <About />
       <Service />
       <Technology />
-      <Experience />
       <Education />
       <Portfolio />
       <Footer />

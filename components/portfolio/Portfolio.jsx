@@ -20,7 +20,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <section id="featured-work-section" className="portfolio-section">
+      <section id={projects.id} className="section portfolio-section ">
         <div className="container">
           <div className="row">
             <div className="col s12 section-title">
@@ -71,26 +71,30 @@ export default function Portfolio() {
                                   </div>
                                   <div className="portfolio-intro-image">
                                     <a
-                                      href={project.image}
+                                      href={project.link}
                                       className="btn-circle waves-effect portfolio-mfp tooltipped"
-                                      data-position="top"
-                                      data-delay="50"
-                                      data-tooltip="View Photo"
+                                      data-position={"top"}
+                                      data-delay={"50"}
+                                      data-tooltip={"Preview"}
+                                      rel="noopener noreferrer"
+                                      target={"_blank"}
                                     >
                                       {" "}
-                                      <span className="fa fa-picture-o"></span>
+                                      <span className="fa fa-external-link"></span>
                                     </a>
                                   </div>
-                                  {project.link && project.link !== "#" && (
+                                  {project.code && project.code !== "#" && (
                                     <div className="portfolio-intro-detail">
                                       <a
-                                        href={project.link}
+                                        href={project.code}
                                         className="btn-circle waves-effect tooltipped"
-                                        data-position="top"
-                                        data-delay="50"
-                                        data-tooltip="View Project"
+                                        data-position={"top"}
+                                        data-delay={"50"}
+                                        data-tooltip={"View Project"}
+                                        rel="noopener noreferrer"
+                                        target={"_blank"}
                                       >
-                                        <span className="fa fa-link"></span>
+                                        <span className="fa fa-code"></span>
                                       </a>
                                     </div>
                                   )}
@@ -104,34 +108,217 @@ export default function Portfolio() {
                   {/* End All Project */}
                   <TabPanel>
                     <ul className="portfolio-items">
-                      <li
-                        className="portfolio-content"
-                        data-aos="pulse"
-                        data-aos-duration="1200"
-                        data-aos-delay="0"
-                      ></li>
+                      {projects.data &&
+                        projects.data.map((project, index) => (
+                           project.group === "Web Apps" &&
+                           <li className="portfolio-content" key={index}>
+                           <figure
+                             className="portfolio-content__inner shadow-bg"
+                             data-aos="pulse"
+                             data-aos-duration="1200"
+                             data-aos-delay="0"
+                           >
+                             <div className="aspect aspect--4x3">
+                               <div className="aspect__inner">
+                                 <Image
+                                   src={project.image}
+                                   alt={project.name}
+                                   layout="fill"
+                                   objectFit="cover"
+                                 />
+                               </div>
+                             </div>
+                             <figcaption>
+                               <div className="portfolio-intro">
+                                 <div className="portfolio-intro-category">
+                                   {project.category &&
+                                     project.category.map(
+                                       (categorie, index) => (
+                                         <p key={index}>{categorie}</p>
+                                       )
+                                     )}
+                                 </div>
+                                 <div className="portfolio-intro-title">
+                                   <a href={project.link}>{project.name}</a>
+                                 </div>
+                                 <div className="portfolio-intro-image">
+                                   <a
+                                     href={project.link}
+                                     className="btn-circle waves-effect portfolio-mfp tooltipped"
+                                     data-position="top"
+                                     data-delay="50"
+                                     data-tooltip="Preview"
+                                     rel="noopener noreferrer"
+                                     target={"_blank"}
+                                   >
+                                     {" "}
+                                     <span className="fa fa-external-link"></span>
+                                   </a>
+                                 </div>
+                                 {project.code && project.code !== "#" && (
+                                   <div className="portfolio-intro-detail">
+                                     <a
+                                       href={project.code}
+                                       className="btn-circle waves-effect tooltipped"
+                                       data-position="top"
+                                       data-delay="50"
+                                       data-tooltip="View Project"
+                                       rel="noopener noreferrer"
+                                       target={"_blank"}
+                                     >
+                                       <span className="fa fa-code"></span>
+                                     </a>
+                                   </div>
+                                 )}
+                               </div>
+                             </figcaption>
+                           </figure>
+                         </li>
+                        ))}
                     </ul>
                   </TabPanel>
                   {/* End Web Apps Project */}
                   <TabPanel>
-                    <ul className="portfolio-items">
-                      <li
-                        className="portfolio-content"
-                        data-aos="pulse"
-                        data-aos-duration="1200"
-                        data-aos-delay="0"
-                      ></li>
+                  <ul className="portfolio-items">
+                      {projects.data &&
+                        projects.data.map((project, index) => (
+                           project.group === "Desktop Apps" &&
+                           <li className="portfolio-content" key={index}>
+                           <figure
+                             className="portfolio-content__inner shadow-bg"
+                             data-aos="pulse"
+                             data-aos-duration="1200"
+                             data-aos-delay="0"
+                           >
+                             <div className="aspect aspect--4x3">
+                               <div className="aspect__inner">
+                                 <Image
+                                   src={project.image}
+                                   alt={project.name}
+                                   layout="fill"
+                                   objectFit="cover"
+                                 />
+                               </div>
+                             </div>
+                             <figcaption>
+                               <div className="portfolio-intro">
+                                 <div className="portfolio-intro-category">
+                                   {project.category &&
+                                     project.category.map(
+                                       (categorie, index) => (
+                                         <p key={index}>{categorie}</p>
+                                       )
+                                     )}
+                                 </div>
+                                 <div className="portfolio-intro-title">
+                                   <a href={project.link}>{project.name}</a>
+                                 </div>
+                                 <div className="portfolio-intro-image">
+                                   <a
+                                     href={project.link}
+                                     className="btn-circle waves-effect portfolio-mfp tooltipped"
+                                     data-position="top"
+                                     data-delay="50"
+                                     data-tooltip="Preview"
+                                     rel="noopener noreferrer"
+                                     target={"_blank"}
+                                   >
+                                     {" "}
+                                     <span className="fa fa-external-link"></span>
+                                   </a>
+                                 </div>
+                                 {project.code && project.code !== "#" && (
+                                   <div className="portfolio-intro-detail">
+                                     <a
+                                       href={project.link}
+                                       className="btn-circle waves-effect tooltipped"
+                                       data-position="top"
+                                       data-delay="50"
+                                       data-tooltip="View Project"
+                                       rel="noopener noreferrer"
+                                       target={"_blank"}
+                                     >
+                                       <span className="fa fa-code"></span>
+                                     </a>
+                                   </div>
+                                 )}
+                               </div>
+                             </figcaption>
+                           </figure>
+                         </li>
+                        ))}
                     </ul>
                   </TabPanel>
                   {/* End Desktop Apps Project */}
                   <TabPanel>
-                    <ul className="portfolio-items">
-                      <li
-                        className="portfolio-content"
-                        data-aos="pulse"
-                        data-aos-duration="1200"
-                        data-aos-delay="0"
-                      ></li>
+                  <ul className="portfolio-items">
+                      {projects.data &&
+                        projects.data.map((project, index) => (
+                           project.group === "Mobile Apps" &&
+                           <li className="portfolio-content" key={index}>
+                           <figure
+                             className="portfolio-content__inner shadow-bg"
+                             data-aos="pulse"
+                             data-aos-duration="1200"
+                             data-aos-delay="0"
+                           >
+                             <div className="aspect aspect--4x3">
+                               <div className="aspect__inner">
+                                 <Image
+                                   src={project.image}
+                                   alt={project.name}
+                                   layout="fill"
+                                   objectFit="cover"
+                                 />
+                               </div>
+                             </div>
+                             <figcaption>
+                               <div className="portfolio-intro">
+                                 <div className="portfolio-intro-category">
+                                   {project.category &&
+                                     project.category.map(
+                                       (categorie, index) => (
+                                         <p key={index}>{categorie}</p>
+                                       )
+                                     )}
+                                 </div>
+                                 <div className="portfolio-intro-title">
+                                   <a href={project.link}>{project.name}</a>
+                                 </div>
+                                 <div className="portfolio-intro-image">
+                                   <a
+                                     href={project.link}
+                                     className="btn-circle waves-effect portfolio-mfp tooltipped"
+                                     data-position="top"
+                                     data-delay="50"
+                                     data-tooltip="Preview"
+                                     rel="noopener noreferrer"
+                                     target={"_blank"}
+                                   >
+                                     {" "}
+                                     <span className="fa fa-picture-o"></span>
+                                   </a>
+                                 </div>
+                                 {project.code && project.code !== "#" && (
+                                   <div className="portfolio-intro-detail">
+                                     <a
+                                       href={project.code}
+                                       className="btn-circle waves-effect tooltipped"
+                                       data-position="top"
+                                       data-delay="50"
+                                       data-tooltip="View Project"
+                                       rel="noopener noreferrer"
+                                       target={"_blank"}
+                                     >
+                                       <span className="fa fa-code"></span>
+                                     </a>
+                                   </div>
+                                 )}
+                               </div>
+                             </figcaption>
+                           </figure>
+                         </li>
+                        ))}
                     </ul>
                   </TabPanel>
                   {/* End Mobile Apps Project */}
@@ -143,7 +330,7 @@ export default function Portfolio() {
                   className="btn-circle waves-effect tooltipped"
                   data-position="top"
                   data-delay="50"
-                  data-tooltip="More Featured Work"
+                  data-tooltip="More Featured"
                 >
                   <span></span>
                   <span></span>

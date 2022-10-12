@@ -18,10 +18,7 @@ export default function Footer() {
   };
 
   useEffect(() => {
-    // const M = typeof window !== "undefined" ? require("materialize-css") : null;
-    // // tooltipped
-    // const elems = document.querySelectorAll(".footer-tooltipped");
-    // M.Tooltip.init(elems, {});
+
     initTooltip();
   }, []);
 
