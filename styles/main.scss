@@ -1,7 +1,9 @@
 // Skin
 @import "./skins/yellow.scss";
-
-@import "./header.scss";
+//Header
+@import "./scss/header.scss";
+//Portfolio
+@import "./scss/portfolio.scss";
 
 // Static properties
 @import url("./css/css.css");

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import { initTooltip } from "../../lib/tooltips";
 
 const settings = {
   dots: false,
@@ -48,6 +49,7 @@ export default function Technology() {
         });
     };
     getTechnologies();
+    initTooltip();
   }, [request]);
   return (
     <>
@@ -68,16 +70,14 @@ export default function Technology() {
                   <Slider {...settings}>
                     {technologies.items.map((tech, index) => (
                       <div className="item" key={index}>
-                        <a
-                          id={tech.title}
-                          className="tooltipped"
-                          data-position="top"
-                          data-delay="50"
-                          data-tooltip={tech.title}
-                        >
+                        <a href="#">
                           <Image
+                            className="tooltipped"
                             src={tech.image}
-                            alt={tech.title}
+                            alt={tech.name}
+                            data-position="top"
+                            data-delay="50"
+                            data-tooltip={tech.name}
                             width={159}
                             height={159}
                           />
