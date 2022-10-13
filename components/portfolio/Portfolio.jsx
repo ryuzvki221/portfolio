@@ -26,7 +26,7 @@ export default function Portfolio() {
             <div className="col s12 section-title">
               <h2>featured work</h2>
             </div>
-            <div className="col s12">
+            <div className="col s12" >
               <Tabs className="col s12 section-content pd-0">
                 <TabList className="portfolio-tab-list ">
                   <Tab>All</Tab>
@@ -34,7 +34,7 @@ export default function Portfolio() {
                   <Tab>Desktop apps</Tab>
                   <Tab>Mobile Apps</Tab>
                 </TabList>
-                <div className="portfolio-tab-content">
+                <div className="portfolio-tab-content" data-aos="fade-up">
                   <TabPanel>
                     <ul className="portfolio-items">
                       {projects.data &&
