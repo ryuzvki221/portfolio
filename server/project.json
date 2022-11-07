@@ -3,11 +3,27 @@
   "title": "Projects",
   "data": [
     {
+      "name": "Senanime",
+      "image": "/img/projects/Senanime.png",
+      "link": "https://senanime.vercel.app/",
+      "code": "https://github.com/ryuzvki221/",
+      "category": ["Typscript", "HTML/SCSS", "Angular", "Material Design"],
+      "group": "Web Apps"
+    },
+    {
+      "name": "Netflix Clone",
+      "image": "/img/projects/NetflixClone.png",
+      "link": "https://netflix-clone-phi-nine.vercel.app/",
+      "code": "https://github.com/ryuzvki221/NetflixClone/",
+      "category": ["Typscript", "HTML/SCSS", "Angular", "Ionic"],
+      "group": "Web Apps"
+    },
+    {
       "name": "Proxidoc",
       "image": "/img/projects/Proxidoc.png",
       "link": "https://proxidoc.herokuapp.com",
       "code": "https://github.com/ryuzvki221/ProxiDoc/",
-      "category": ["Django", "Heroku"],
+      "category": ["Python", "Django", "HTML/CSS", "Bootstrap"],
       "group": "Web Apps"
     },
     {
@@ -15,35 +31,20 @@
       "image": "/img/projects/QuartierSandaga.png",
       "link": "https://www.quartiersandaga.com",
       "code": "#",
-      "category": ["Wordpress", "WooCommerce"],
+      "category": ["PHP", "Wordpress", "Elementor", "WooCommerce"],
       "group": "Web Apps"
     },
-    {
-      "name": "Project One",
-      "image": "/img/projects/Exemple.jpg",
-      "link": "https://ryuzvki221.github.io",
-      "code": "https://github.com/ryuzvki221/",
-      "category": ["NextJS", "Vercel"],
-      "group": "Desktop Apps"
-    },
+
     {
       "name": "Project Two",
       "image": "/img/projects/Exemple.jpg",
       "link": "https://ryuzvki221.github.io",
       "code": "https://github.com/ryuzvki221/",
-      "category": ["NextJS", "Vercel"],
+      "category": ["C#", "ASP .Net", "Github Pages"],
       "group": "Desktop Apps"
     },
     {
       "name": "Project Three",
-      "image": "/img/projects/Exemple.jpg",
-      "link": "https://ryuzvki221.github.io",
-      "code": "https://github.com/ryuzvki221/",
-      "category": ["Flutter", "Firebase"],
-      "group": "Mobile Apps"
-    },
-    {
-      "name": "Project Four",
       "image": "/img/projects/Exemple.jpg",
       "link": "https://ryuzvki221.github.io",
       "code": "https://github.com/ryuzvki221/",
