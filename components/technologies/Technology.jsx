@@ -1,7 +1,10 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import { initTooltip } from "../../lib/tooltips";
+import technologiesData from "../../data/technologies.json";
 
 const settings = {
   dots: false,
@@ -37,27 +40,19 @@ const settings = {
 };
 
 export default function Technology() {
-  const request = "/api/v1/tech/";
-  const [technologies, fetchTechnologies] = useState({});
+  const [technologies] = useState(technologiesData); // Directement initialisé
 
   useEffect(() => {
-    const getTechnologies = async () => {
-      await fetch(request)
-        .then((response) => response.json())
-        .then((tech) => {
-          fetchTechnologies(tech);
-        });
-    };
-    getTechnologies();
     initTooltip();
-  }, [request]);
+  }, []);
+  
   return (
     <>
-      <section id={technologies.id} className="technologies-section">
+      <section id="technologies-section" className="technologies-section">
         <div className="container">
           <div className="row">
             <div className="col s12 section-title">
-              <h2>{technologies.title}</h2>
+              <h2>{technologies.title || "Technologies"}</h2>
             </div>
             <div
               className="col s12 client-wrapper"

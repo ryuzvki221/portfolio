@@ -1,25 +1,24 @@
-// Skin
-@import "./skins/yellow.scss";
-//Header
-@import "./scss/header.scss";
-//Portfolio
-@import "./scss/portfolio.scss";
 
-// Static properties
-@import url("./css/css.css");
-@import url("./css/css_002.css");
-@import url("./css/css_003.css");
-@import url("./css/img-comparison.css");
-@import url("./css/responsive.css");
+// 1. Configuration
+@use "./variables" as *;
+@use "./theme";
 
-//Font awesome
+
+// 2. Base & Layout
+@use "./scss/base.scss";
+@use "./scss/header.scss";
+@use "./scss/responsive.scss";
+
+// 3. Components
+@use "./scss/portfolio.scss";
+@use "./scss/language-switcher.scss";
+
+// 4. External Libraries & Fonts
+@import "./globals.css";
 @import url("~font-awesome/css/font-awesome.min.css");
-
-
-//Slick Carousel
 @import url("~slick-carousel/slick/slick.css");
 @import url("~slick-carousel/slick/slick-theme.css");
-
-// import aos styles
 @import url("aos/dist/aos.css");
+
+
 
