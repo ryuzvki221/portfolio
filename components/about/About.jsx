@@ -1,20 +1,17 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import Social from "../Social";
+import authorData from "../../data/author.json";
+import { useLanguage } from "../LanguageSwitcher/LanguageContext";
 
 export default function About() {
-  const request = "/api/v1/author/";
+  const { t } = useLanguage();
   const [author, fetchAuthor] = useState({});
 
   useEffect(() => {
-    const getAuthor = async () => {
-      await fetch(request)
-        .then((response) => response.json())
-        .then((author) => {
-          fetchAuthor(author);
-        });
-    };
-    getAuthor();
-  }, [request]);
+    fetchAuthor(authorData);
+  }, []);
 
   //calcul birth date
   const birthDate = (dateString) => {
@@ -47,26 +44,25 @@ export default function About() {
                     ></div>
                     <div className="about-name ff-poppins">{author.name}</div>
                     <div className="about-title ff-opensans">{author.job}</div>
-                  </div>
-                  <div className="col s12 l7 about-data-wrapper pd-50">
+                  </div>                  <div className="col s12 l7 about-data-wrapper pd-50">
                     <div className="about-desc pd-0">
-                      <div className="about-section-title">About Me</div>
+                      <div className="about-section-title">{t('about.title')}</div>
                       <div className="about-data">
                         <p className="">{author.bio}</p>
                         <div>
-                          <span>Age</span>
+                          <span>{t('about.age')}</span>
                           {age}
                         </div>
                         <div>
-                          <span>Address</span>
+                          <span>{t('about.address')}</span>
                           {author.address}
                         </div>
                         <div>
-                          <span>Email</span>
+                          <span>{t('about.email')}</span>
                           <a href={`mailto:${author.email}`}>{author.email}</a>
                         </div>
                         <div>
-                          <span>Website</span>
+                          <span>{t('about.website')}</span>
                           <a href={`${author.website}`}>{author.website}</a>
                         </div>
                       </div>

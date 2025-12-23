@@ -1,8 +1,14 @@
-/* =================================================================== */
-/* MAGENTA #ee6192
-====================================================================== */
-$base-color: #ee6192;
+// ============================================
+// Theme System - Single Source of Truth
+// ============================================
+// Apply theme color to all UI elements
+// Following KISS/LEAN principles - one variable, one responsibility
 
+@use './variables' as *;
+
+// ============================================
+// Background Colors
+// ============================================
 .backdrop,
 .material-tooltip,
 .header .menu-bar,
@@ -58,13 +64,16 @@ $base-color: #ee6192;
 .experience-box .experience-time,
 .experience-box .place:before,
 .owl-theme .owl-dots .owl-dot span {
-  background-color: $base-color !important;
-}
-.experience-box li:after{
-  border-left: 1px solid $base-color !important;
-  
+  background-color: $primary-color !important;
 }
 
+.experience-box li:after {
+  border-left: 1px solid $primary-color !important;
+}
+
+// ============================================
+// Text Colors
+// ============================================
 .btn-custom:hover,
 .site-logo a,
 .main-nav a.active-nav,
@@ -107,9 +116,12 @@ $base-color: #ee6192;
 .single-portfolio-demo-link a:hover,
 .single-sidebar a:hover,
 .color-scheme-select-btn {
-  color: $base-color !important;
+  color: $primary-color !important;
 }
 
+// ============================================
+// Border Colors
+// ============================================
 blockquote,
 .backdrop,
 .preloader .spinner-layer,
@@ -119,22 +131,26 @@ blockquote,
 .c-form-input:focus,
 body .color-scheme-select,
 .color-scheme-select-btn {
-  border-color: $base-color !important;
+  border-color: $primary-color !important;
 }
 
 body .arrow-box::before,
 .timeline-panel .timeline-time::before {
-  border-left-color: $base-color !important;
+  border-left-color: $primary-color !important;
 }
 
+// ============================================
+// Box Shadows
+// ============================================
 .search-form .search-field:focus:not([readonly]),
 .input-field input:focus:not([readonly]),
 .input-field textarea:focus:not([readonly]) {
-  -webkit-box-shadow: 0 1px 0 0 $base-color !important;
-  -moz-box-shadow: 0 1px 0 0 $base-color !important;
-  box-shadow: 0 1px 0 0 $base-color !important;
+  box-shadow: 0 1px 0 0 $primary-color !important;
 }
 
+// ============================================
+// SVG Fills
+// ============================================
 .github-corner svg {
-  fill: $base-color !important;
+  fill: $primary-color !important;
 }

@@ -1,19 +1,14 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
+import timelineData from "../../data/timeline.json";
 
 export default function Education() {
-  const request = "/api/v1/timeline/";
   const [timeline, fetchTimeline] = useState({});
 
   useEffect(() => {
-    const getTechnologies = async () => {
-      await fetch(request)
-        .then((response) => response.json())
-        .then((line) => {
-          fetchTimeline(line);
-        });
-    };
-    getTechnologies();
-  }, [request]);
+    fetchTimeline(timelineData);
+  }, []);
 
   // is mobile
 

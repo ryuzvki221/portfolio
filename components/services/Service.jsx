@@ -1,23 +1,14 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import React, { useState } from "react";
+import serviceData from "../../data/service.json";
 
 export default function Service() {
-  const request = "/api/v1/services/";
-  const [service, fetchService] = useState({});
-
-  useEffect(() => {
-    const getService = async () => {
-      await fetch(request)
-        .then((response) => response.json())
-        .then((service) => {
-          fetchService(service);
-        });
-    };
-    getService();
-  }, [request]);
+  const [service] = useState(serviceData); // Directement initialisé
 
   return (
     <>
-      <section id={service.id} className="section service-section">
+      <section id="service-section" className="section service-section">
         <div className="container">
           <div className="row">
             {service.title && (

@@ -3,12 +3,16 @@ const path = require("path");
 
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
   images: {
-    domains: ['via.placeholder.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+      },
+    ],
   },
 };
 module.exports = nextConfig;

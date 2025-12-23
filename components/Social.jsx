@@ -1,20 +1,14 @@
-import React, { useState, useEffect } from "react";
+"use client";
+
+import  { useState, useEffect } from "react";
+import socialData from "../data/social.json";
 
 const Social = () => {
-  const request = "/api/v1/social/";
   const [social, fetchSocial] = useState([]);
 
   useEffect(() => {
-    const getSocial = async () => {
-      await fetch(request)
-        .then((response) => response.json())
-        .then((social) => {
-          fetchSocial(social);
-          // console.log(social);
-        });
-    };
-    getSocial();
-  }, [request]);
+    fetchSocial(socialData);
+  }, []);
   return (
     <>
       {social.map((val, i) => {
