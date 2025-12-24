@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import Social from "../Social";
-import authorData from "../../data/author.json";
-import { useLanguage } from "../LanguageSwitcher/LanguageContext";
+import authorData from "@/data/fr/author.json";
+import { useLanguage } from "@/hooks/LanguageContext";
 
 export default function About() {
   const { t } = useLanguage();
@@ -17,7 +17,7 @@ export default function About() {
   const birthDate = (dateString) => {
     const birthday = new Date(dateString);
     const ageDifMs = Date.now() - birthday.getTime();
-    const ageDate = new Date(ageDifMs); // miliseconds from epoch
+    const ageDate = new Date(ageDifMs); 
     return Math.abs(ageDate.getFullYear() - 1970);
   };
 
@@ -42,7 +42,12 @@ export default function About() {
                       data-depth="0.1"
                       style={{ backgroundImage: `url(${author.profil})` }}
                     ></div>
-                    <div className="about-name ff-poppins">{author.name}</div>
+                    <div className="about-name ff-poppins">
+                      {author.name}
+                      {author.degree && (
+                        <span className="about-degree">, {author.degree}</span>
+                      )}
+                    </div>
                     <div className="about-title ff-opensans">{author.job}</div>
                   </div>                  <div className="col s12 l7 about-data-wrapper pd-50">
                     <div className="about-desc pd-0">
@@ -60,10 +65,6 @@ export default function About() {
                         <div>
                           <span>{t('about.email')}</span>
                           <a href={`mailto:${author.email}`}>{author.email}</a>
-                        </div>
-                        <div>
-                          <span>{t('about.website')}</span>
-                          <a href={`${author.website}`}>{author.website}</a>
                         </div>
                       </div>
                     </div>

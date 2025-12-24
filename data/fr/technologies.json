@@ -1,0 +1,37 @@
+{
+  "id": "technologies-section",
+  "title": "Technologies",
+  "items": [
+    { "name": "HTML", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" },
+    { "name": "CSS", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" },
+    { "name": "JavaScript", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" },
+    { "name": "TypeScript", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/typescript.svg" },
+
+    { "name": "React", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg" },
+    { "name": "Angular", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/angular.svg" },
+    { "name": "Vue", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vuedotjs.svg" },
+    { "name": "jQuery", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jquery.svg" },
+
+    { "name": "Bootstrap", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg" },
+    { "name": "Tailwind", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tailwindcss.svg" },
+    { "name": "Styled Components", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/styledcomponents.svg" },
+
+    { "name": "Python", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" },
+    { "name": "Django", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/django.svg" },
+    { "name": "Node.js", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/nodedotjs.svg" },
+    { "name": "REST API", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openapiinitiative.svg" },
+    { "name": "WordPress", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/wordpress.svg" },
+
+    { "name": "MySQL", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" },
+    { "name": "PostgreSQL", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postgresql.svg" },
+    { "name": "MongoDB", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg" },
+    { "name": "Firebase", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/firebase.svg" },
+
+    { "name": "Docker", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/docker.svg" },
+    { "name": "OpenStack", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/openstack.svg" },
+    { "name": "VMware", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vmware.svg" },
+
+    { "name": "Android", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg" },
+    { "name": "Ionic", "image": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ionic.svg" }
+  ]
+}

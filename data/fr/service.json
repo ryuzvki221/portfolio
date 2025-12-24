@@ -1,0 +1,36 @@
+{
+  "id": "service-section",
+  "title": "Compétences",
+  "data": [
+    {
+      "icon": "fa fa-desktop",
+      "title": "Développement Frontend",
+      "desc": "React, Next.js, Angular, JavaScript, TypeScript, HTML5, CSS3 / SASS, Responsive Design"
+    },
+    {
+      "icon": "fa fa-cubes",
+      "title": "Développement Backend",
+      "desc": "Java, Python, Node.js, Spring Boot, Django, REST APIs, Authentication (JWT, OAuth2, SSO)"
+    },
+    {
+      "icon": "fa fa-cogs",
+      "title": "IA & LLM",
+      "desc": "Large Language Models (LLM), Prompt Engineering, API-based LLM integration, RAG fundamentals"
+    },
+    {
+      "icon": "fa fa-server",
+      "title": "Cloud & Infrastructure",
+      "desc": "AWS, VMware, OpenStack, Linux, Shell scripting, SSH"
+    },
+    {
+      "icon": "fa fa-database",
+      "title": "Bases de données",
+      "desc": "PostgreSQL, MySQL, MongoDB, Redis"
+    },
+    {
+      "icon": "fa fa-code-fork",
+      "title": "DevSecOps & Sécurité",
+      "desc": "Git, GitHub / GitLab, Docker, Kubernetes, CI/CD pipelines, OWASP Top 10, Vulnerability assessment"
+    }
+  ]
+}

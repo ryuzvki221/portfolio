@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-import { initTooltip } from "../../lib/tooltips";
-import technologiesData from "../../data/technologies.json";
+import { initTooltip } from "@/lib/tooltips";
+import technologiesData from "@/data/fr/technologies.json";
 
 const settings = {
   dots: false,

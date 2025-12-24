@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import timelineData from "../../data/timeline.json";
+import timelineData from "@/data/fr/timeline.json";
 
 export default function Education() {
   const [timeline, fetchTimeline] = useState({});

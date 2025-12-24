@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Image from "next/image";
-import { initTooltip } from "../../lib/tooltips";
-import projectsData from "../../data/project.json";
+import { initTooltip } from "@/lib/tooltips";
+import projectsData from "@/data/fr/project.json";
 
 export default function Portfolio() {
   const [projects] = useState(projectsData); // Directement initialisé avec les données
