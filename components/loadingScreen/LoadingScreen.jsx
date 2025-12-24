@@ -1,55 +1,23 @@
 const LoadingScreen = () => {
   return (
-    <div className="preloader-inner">
-      <div className="preloader-wrapper big active">
-        <div className="spinner-layer spinner-blue">
-          <div className="circle-clipper left">
-            <div className="circle"></div>
-          </div>
-          <div className="gap-patch">
-            <div className="circle"></div>
-          </div>
-          <div className="circle-clipper right">
-            <div className="circle"></div>
-          </div>
-        </div>
-
-        <div className="spinner-layer spinner-red">
-          <div className="circle-clipper left">
-            <div className="circle"></div>
-          </div>
-          <div className="gap-patch">
-            <div className="circle"></div>
-          </div>
-          <div className="circle-clipper right">
-            <div className="circle"></div>
-          </div>
-        </div>
-
-        <div className="spinner-layer spinner-yellow">
-          <div className="circle-clipper left">
-            <div className="circle"></div>
-          </div>
-          <div className="gap-patch">
-            <div className="circle"></div>
-          </div>
-          <div className="circle-clipper right">
-            <div className="circle"></div>
-          </div>
-        </div>
-
-        <div className="spinner-layer spinner-green">
-          <div className="circle-clipper left">
-            <div className="circle"></div>
-          </div>
-          <div className="gap-patch">
-            <div className="circle"></div>
-          </div>
-          <div className="circle-clipper right">
-            <div className="circle"></div>
-          </div>
-        </div>
-      </div>
+    <div className="preloader-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+      <img
+        src="/favicon.svg"
+        alt="Loading..."
+        style={{
+          width: 80,
+          height: 80,
+          animation: 'pulse 1.2s ease-in-out infinite',
+          filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))'
+        }}
+      />
+      <style>{`
+        @keyframes pulse {
+          0% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.15); opacity: 0.7; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+      `}</style>
     </div>
   );
 };

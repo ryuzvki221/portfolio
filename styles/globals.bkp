@@ -1244,19 +1244,11 @@ ul.ff-roboto-cn li {
 }
 
 .about-name {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
   margin: 25px 0 0;
-}
-
-.about-degree {
-  font-size:20px;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0.8px;
-
 }
 
 .about-title {
@@ -1515,35 +1507,31 @@ ul.ff-roboto-cn li {
   opacity: 0;
   visibility: hidden;
   height: 80px;
-  text-align: center;
-  line-height: 1.6;
-  white-space: pre-line;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
   transform: scale(0.5);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .service-wrapper:hover .service-desc {
   opacity: 1;
   visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1);
 }
 
 /* =============================================
 	6. Skill Section
  ============================================= */
-
-.tech-icon {
-  filter: brightness(0) saturate(100%);
-}
-
-.tech-frontend {
-  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(190deg);
-}
-
-.tech-backend {
-  filter: invert(36%) sepia(77%) saturate(469%) hue-rotate(92deg);
-}
-
 
 .skill-wrapper {
   margin-top: 50px;

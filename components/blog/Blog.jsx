@@ -1,6 +1,6 @@
 "use client";
 
-import { useLanguage } from "../LanguageSwitcher/LanguageContext";
+import { useLanguage } from "../../hooks/LanguageContext";
 
 export default function Blog() {
   const { t } = useLanguage();

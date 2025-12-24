@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import AOS from "aos";
 
-import { LanguageProvider, useLanguage } from "../components/LanguageSwitcher/LanguageContext";
+import { LanguageProvider, useLanguage } from "../hooks/LanguageContext";
 import LanguageSwitcher from "../components/LanguageSwitcher/LanguageSwitcher";
 
 import About from "../components/about/About";
@@ -40,6 +40,58 @@ function HomePageContent() {
       easing: "ease-out-cubic",
     });
   }, []);
+
+  // Scroll Spy: update active menu based on visible section
+  useEffect(() => {
+    const ids = menuItems.map((m) => m.id).filter(Boolean);
+    const sections = ids
+      .map((id) => document.getElementById(id))
+      .filter((el) => !!el);
+
+    if (!sections.length) return;
+
+    const updateActiveMenu = () => {
+      const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+      
+      // Si on est en haut de la page (moins de 200px), toujours activer Home
+      if (scrollY < 200) {
+        setActiveMenu(0);
+        return;
+      }
+
+      // Trouver la section la plus proche du haut de la page
+      let closestSection = null;
+      let closestDistance = Infinity;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        const distance = Math.abs(rect.top);
+        
+        // Si la section est visible (pas complètement hors de vue)
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestSection = section;
+          }
+        }
+      });
+
+      if (closestSection) {
+        const idx = menuItems.findIndex((m) => m.id === closestSection.id);
+        if (idx >= 0) setActiveMenu(idx);
+      }
+    };
+
+    // Écouter le scroll
+    window.addEventListener("scroll", updateActiveMenu, { passive: true });
+    
+    // Appel initial
+    updateActiveMenu();
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveMenu);
+    };
+  }, [menuItems]);
 
   const scrollToSection = useCallback((id) => {
     const target = id ? document.getElementById(id) : document.body;

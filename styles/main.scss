@@ -1,14 +1,12 @@
 // ============================================
 // Main SCSS - Portfolio Styles
-// ============================================
-// Using modern @use/@forward syntax (Sass 3.0 compatible)
 
-// 1. Configuration (MUST be first - Sass 3.0 requirement)
+// 1. Configuration
 @use "./variables" as *;
 @use "./theme";
 
 // 2. Base & Layout
-@use "./scss/typography";
+
 @use "./scss/base.scss";
 @use "./scss/header.scss";
 @use "./scss/responsive.scss";
@@ -19,9 +17,9 @@
 
 // 4. External Libraries & Fonts (after @use rules)
 @import url("./globals.css");
-@import url("~font-awesome/css/font-awesome.min.css");
-@import url("~slick-carousel/slick/slick.css");
-@import url("~slick-carousel/slick/slick-theme.css");
+@import "font-awesome/css/font-awesome.min.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 @import url("aos/dist/aos.css");
 
 

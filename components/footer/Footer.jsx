@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { initTooltip } from "../../lib/tooltips";
+import { initTooltip } from "@/lib/tooltips";
 
 export default function Footer() {
   const scrollToTop = () => {
