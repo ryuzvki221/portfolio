@@ -1,0 +1,70 @@
+{
+  "id": "timeline-section",
+  "experience": [
+    {
+      "tag": "Helix Technology",
+      "title": "Software Developer",
+      "description": [
+        "✔ Work with the development team to identify and implement software solutions.",
+        "✔ Developing & maintaining web apps/websites using Wordpress, Angular, Cpanel  & Firebase.",
+        "✔ Building mobile apps with Ionic."
+      ],
+      "period": "Jan. 2021 -- Dec. 2021",
+      "position": "left"
+    },
+    {
+      "tag": "Senelec",
+      "title": "Trainee Computer Technician",
+      "description": [
+        "✔ Supervision, helpdesk and support services.",
+        "✔ Computer maintenance.",
+        "✔ Software and operating system administration.",
+        "✔ Installation and maintenance of computer networks.",
+        "✔ Write a daily report."
+      ],
+      "period": " Jun. 2018 -- Aug. 2018",
+      "position": "right"
+    }
+  ],
+  "certification": [
+    {
+      "tag": "ForceN",
+      "title": "Professional license in application design and development"
+    },
+    {
+      "tag": "Coursera",
+      "title": "Bachelor's degree in computer science"
+    },
+    {
+      "tag": "Oracle",
+      "title": "Diploma in computer science"
+    }
+  ],
+
+  "education": [
+    {
+      "tag": "Virtual University of Senegal (UVS)",
+      "title": "Master's degree in Computer Science and Mathematics of Cybersecurity",
+      "period": "2022 - Present",
+      "position": "left"
+    },
+    {
+      "tag": "Thies University",
+      "title": "Master's degree in Software engineering",
+      "period": "2020 - 2022",
+      "position": "right"
+    },
+    {
+      "tag": "Polytechnic school of Dakar",
+      "title": "Bachelor's degree in Computer science",
+      "period": "2019 - 2020",
+      "position": "left"
+    },
+    {
+      "tag": "Center for Technical and Vocational Training Senegal - Japan",
+      "title": "Higher National Diploma in Industrial IT and Networks",
+      "period": "2017 - 2019",
+      "position": "right"
+    }
+  ]
+}

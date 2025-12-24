@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Social from "../Social";
-import authorData from "../../data/author.json";
+import authorData from "../../data/fr/author.json";
 import { useLanguage } from "../LanguageSwitcher/LanguageContext";
 
 export default function About() {

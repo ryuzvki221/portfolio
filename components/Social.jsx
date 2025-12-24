@@ -1,7 +1,7 @@
 "use client";
 
 import  { useState, useEffect } from "react";
-import socialData from "../data/social.json";
+import socialData from "../data/fr/social.json";
 
 const Social = () => {
   const [social, fetchSocial] = useState([]);

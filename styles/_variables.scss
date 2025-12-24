@@ -14,8 +14,16 @@ $light: #fff;
 $gray: #666;
 $gray-light: #f8f8f8;
 
-// Typographie - Archivo (moderne & lisible) + Poppins fallback
-$font-primary: 'Archivo', 'Poppins', system-ui, sans-serif;
+// Typographie
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+// Espacements
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+$spacing-xl: 48px;
 
 // Breakpoints
 $mobile: 600px;

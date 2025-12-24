@@ -1,11 +1,6 @@
-import "../styles/main.scss";
-import { Archivo } from "next/font/google";
 
-const archivo = Archivo({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
+import "../styles/globals.css";
+import "../styles/main.scss";
 
 export const metadata = {
   title: "Ryuzvki | Personal Portfolio",
@@ -14,7 +9,6 @@ export const metadata = {
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -29,7 +23,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={archivo.className} suppressHydrationWarning>
+      <body suppressHydrationWarning>
         {children}
       </body>
     </html>

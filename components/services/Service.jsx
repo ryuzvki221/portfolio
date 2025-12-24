@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import serviceData from "../../data/service.json";
+import serviceData from "../../data/fr/service.json";
 
 export default function Service() {
   const [service] = useState(serviceData); // Directement initialisé

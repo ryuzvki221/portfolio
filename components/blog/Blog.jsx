@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useLanguage } from "../LanguageSwitcher/LanguageContext";
 
 export default function Blog() {
