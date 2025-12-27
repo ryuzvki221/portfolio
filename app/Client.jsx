@@ -3,18 +3,19 @@
 import { useEffect, useState, useCallback } from "react";
 import AOS from "aos";
 
-import { LanguageProvider, useLanguage } from "../hooks/LanguageContext";
-import LanguageSwitcher from "../components/LanguageSwitcher/LanguageSwitcher";
+import { LanguageProvider, useLanguage } from "@/hooks/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher/LanguageSwitcher";
 
-import About from "../components/about/About";
-import Blog from "../components/blog/Blog";
-import Footer from "../components/footer/Footer";
-import Hero from "../components/hero/Hero";
-import Portfolio from "../components/portfolio/Portfolio";
-import Service from "../components/services/Service";
-import Technology from "../components/technologies/Technology";
-import Education from "../components/timeline/Education";
-import LoadingScreen from "../components/loadingScreen/LoadingScreen";
+import About from "@/components/about/About";
+import Blog from "@/components/publication/Publication";
+import Footer from "@/components/footer/Footer";
+import Hero from "@/components/hero/Hero";
+import Portfolio from "@/components/projects/Project";
+import Service from "@/components/services/Service";
+import Technology from "@/components/technologies/Technology";
+import Education from "@/components/timeline/Education";
+import LoadingScreen from "@/components/loadingScreen/LoadingScreen";
+import DownloadButton from "@/components/DownloaButton";
 
 function HomePageContent() {
   const { t } = useLanguage();
@@ -106,6 +107,7 @@ function HomePageContent() {
 
   return (
     <>
+
       <LanguageSwitcher />
 
       <header className="header">
@@ -124,12 +126,16 @@ function HomePageContent() {
             </li>
           ))}
         </ul>
+
       </header>
+
+      
+        <DownloadButton />
 
       <Hero />
       <About />
       <Service />
-      <Technology />
+      <Technology /> 
       <Education />
       <Portfolio />
       <Blog />

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
-import Image from "next/image";
 import { initTooltip } from "@/lib/tooltips";
 import technologiesData from "@/data/fr/technologies.json";
 
@@ -10,16 +9,16 @@ const settings = {
   dots: false,
   infinite: true,
   slidesToShow: 5,
-  slidesToScroll: 1,
+  slidesToScroll: 5,
   autoplay: true,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 5000,
   pauseOnHover: true,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
       },
     },
     {
@@ -40,33 +39,38 @@ const settings = {
 };
 
 export default function Technology() {
-  const [technologies] = useState(technologiesData); // Directement initialisé
+  const [technologies] = useState(technologiesData);
 
   useEffect(() => {
     initTooltip();
   }, []);
-  
+
   return (
-    <>
-      <section id="technologies-section" className="technologies-section">
-        <div className="container">
-          <div className="row">
-            <div className="col s12 section-title">
-              <h2>{technologies.title || "Technologies"}</h2>
-            </div>
-            <div
-              className="col s12 client-wrapper"
-              data-aos="fade-in"
-              data-aos-duration="1200"
-              data-aos-delay="100"
-            >
-              <div className="col s12 client-carousel w-block shadow-bg pd-0">
-                {technologies.items && (
-                  <Slider {...settings}>
-                    {technologies.items.map((tech, index) => (
-                      <div className="item" key={index}>
-                        <a href="#">
-                          <Image
+    <section id="technologies-section" className="technologies-section">
+      <div className="container">
+        <div className="row">
+          <div className="col s12 section-title">
+            <h2>{technologies.title || "Technologies"}</h2>
+          </div>
+          <div
+            className="col s12 client-wrapper"
+            data-aos="fade-in"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+          >
+            <div className="col s12 client-carousel w-block shadow-bg pd-0">
+              {technologies.items && (
+                <Slider {...settings}>
+                  {technologies.items.map((tech) => (
+                    <div className="item" key={tech.name}>
+                      <button
+                        type="button"
+                        tabIndex={0}
+                        style={{ background: "none", border: "none", padding: 0, cursor: "pointer" }}
+                        aria-label={tech.name}
+                      >
+                        {tech.image ? (
+                          <img
                             className="tooltipped"
                             src={tech.image}
                             alt={tech.name}
@@ -76,16 +80,16 @@ export default function Technology() {
                             width={159}
                             height={159}
                           />
-                        </a>
-                      </div>
-                    ))}
-                  </Slider>
-                )}
-              </div>
+                        ) : null}
+                      </button>
+                    </div>
+                  ))}
+                </Slider>
+              )}
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

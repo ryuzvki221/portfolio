@@ -1058,9 +1058,8 @@ ul.ff-roboto-cn li {
   background: transparent !important;
 }
 
-.main-nav a {
+.main-nav a{
   display: inline-block;
-  font-family: "Dosis", "Open Sans", "Sans Serif" !important;
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;

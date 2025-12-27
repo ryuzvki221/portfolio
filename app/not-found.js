@@ -11,7 +11,7 @@ export default function NotFound() {
             <p style={{ marginBottom: "2rem" }}>
               The page you are looking for does not exist.
             </p>
-            <Link href="/" className="btn-custom">
+            <Link href="/" className="btn-custom" style={{ padding: "0.75rem 1.5rem", backgroundColor: "#ffb400", color: "#fff", borderRadius: "5px", textDecoration: "none" }}>
               Go Back Home
             </Link>
           </div>

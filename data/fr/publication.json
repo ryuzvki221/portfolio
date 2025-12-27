@@ -1,0 +1,68 @@
+{
+  "id": "publication-section",
+  "title": "Publications",
+  "data": [
+    {
+      "title": "SafetilBERT: an efficient and explained LLM for IoMT attacks classification",
+      "abstract": "The rapid adoption of Internet of Medical Things (IoMT) devices has improved patient care but introduces vulnerabilities and exposure to cyber threats, particularly denial-of-service (DoS) attacks. This paper explores the potential of large language models (LLMs) for detecting and classifying IoMT network attacks, emphasizing explainability techniques to address the black-box nature of these models. Using the CICIoMT2024 dataset, we introduce SafetilBERT, a fine-tuned DistilBERT model specialized in IoMT cybersecurity. SafetilBERT achieves state-of-the-art performance scoring 96.94%, significantly outperforming BERT and RoBERTa, particularly in DoS detection. Explainability methods such as Local Interpretable Model-agnostic Explanations (LIME), SHapley Additive explanations (SHAP), and attention visualization were used to interpret key features influencing model predictions. Our findings show that SafetilBERT is efficient and adaptable to network data, particularly from packet capture files (PCAP). Furthermore, its interpretability paves the way for robust IoMT cybersecurity solutions applicable in real-world scenarios.",
+      "keywords": [
+        "Adaptation models",
+        "Scalability",
+        "Large language models",
+        "Data visualization",
+        "Internet of Medical Things",
+        "Predictive models",
+        "Denial-of-service attack",
+        "Real-time systems",
+        "Computer crime",
+        "Resilience"
+      ],
+      "authors": [
+        "Mamadou Niang, Haïfa Nakouri, Fehmi Jaafar"
+      ],
+      "publication_date": "2025-08-26",
+      "link": "https://ieeexplore.ieee.org/document/11130122",
+      "doi": "10.1109/CSR64739.2025.11130122",
+      "venue": "2025 IEEE International Conference on Cyber Security and Resilience (CSR)",
+      "type": "Conference Paper"
+    },
+    {
+      "title": "Placeholder Paper 1",
+      "abstract": "This fictitious paper explores methods to secure communication in IoT networks, focusing on lightweight encryption and authentication protocols suitable for constrained devices. It presents a comparative analysis of several approaches and discusses their scalability and applicability in real-world scenarios.",
+      "keywords": [
+        "IoT security",
+        "Encryption",
+        "Authentication",
+        "Lightweight protocols",
+        "Network security"
+      ],
+      "authors": [
+        "Mamadou Niang"
+      ],
+      "publication_date": "2025-09-15",
+      "link": "#",
+      "doi": "#",
+      "venue": "Fictitious IoT Security Conference 2025",
+      "type": "Conference Paper"
+    },
+    {
+      "title": "Placeholder Paper 2",
+      "abstract": "This fictitious study investigates machine learning techniques for detecting cyber threats in enterprise networks. Various models, including decision trees, random forests, and neural networks, are evaluated for accuracy, efficiency, and interpretability.",
+      "keywords": [
+        "Machine Learning",
+        "Cybersecurity",
+        "Threat detection",
+        "Neural networks",
+        "Enterprise networks"
+      ],
+      "authors": [
+        "Mamadou Niang"
+      ],
+      "publication_date": "2025-10-10",
+      "link": "#",
+      "doi": "#",
+      "venue": "Fictitious Cybersecurity Workshop 2025",
+      "type": "Conference Paper"
+    }
+  ]
+}
