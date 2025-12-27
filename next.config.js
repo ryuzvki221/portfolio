@@ -1,10 +1,9 @@
-/** @type {import('next').NextConfig} */
-const path = require("path");
+import { join } from "node:path";
 
 const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [join(process.cwd(), "styles")],
   },
   images: {
     remotePatterns: [
@@ -12,7 +11,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'via.placeholder.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+      },
     ],
   },
 };
-module.exports = nextConfig;
+export default nextConfig;

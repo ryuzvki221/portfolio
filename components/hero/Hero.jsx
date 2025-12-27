@@ -1,6 +1,6 @@
 const heroContent = {
   title: "",
-  heroBg: "img/bg-1.jpg",
+  heroBg: "/img/bg-1.jpg",
 };
 
 export default function Hero() {

@@ -1,42 +1,59 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect } from "react";
-import { translations, getTranslation } from "@/lib/i18n";
+import { createContext, useContext, useState, useEffect, useCallback, useMemo } from "react";
+import PropTypes from "prop-types";
+import { getTranslation } from "@/lib/i18n";
 
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  // Initialiser avec null pour éviter le mismatch SSR/client
   const [language, setLanguage] = useState("fr");
   const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
     // Marquer comme client-side
     setIsClient(true);
-    
-    // Charger la langue depuis localStorage côté client uniquement
-    const savedLang = localStorage.getItem("language");
-    if (savedLang && savedLang !== "fr") {
-      setLanguage(savedLang);
+
+    // Charger la langue depuis localStorage
+    try {
+      const savedLang = localStorage.getItem("language");
+      if (savedLang && savedLang !== language) {
+        setLanguage(savedLang);
+      }
+    } catch (err) {
+      console.warn("LocalStorage non disponible", err);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const switchLanguage = (lang) => {
+  const switchLanguage = useCallback((lang) => {
     setLanguage(lang);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("language", lang);
+    if (globalThis.window !== undefined) {
+      try {
+        localStorage.setItem("language", lang);
+      } catch (err) {
+        console.warn("Impossible de sauvegarder la langue", err);
+      }
     }
-  };
+  }, []);
 
-  const t = (key) => getTranslation(language, key);
+  const t = useCallback(
+    (key) => getTranslation(language, key),
+    [language]
+  );
+
+  const contextValue = useMemo(
+    () => ({ language, switchLanguage, t, isClient }),
+    [language, switchLanguage, t, isClient]
+  );
 
   return (
-    <LanguageContext.Provider value={{ language, switchLanguage, t }}>
+    <LanguageContext.Provider value={contextValue}>
       {children}
     </LanguageContext.Provider>
   );
 }
 
+// Hook pratique pour récupérer le contexte
 export function useLanguage() {
   const context = useContext(LanguageContext);
   if (!context) {
@@ -44,3 +61,7 @@ export function useLanguage() {
   }
   return context;
 }
+
+LanguageProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};

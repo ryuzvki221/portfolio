@@ -1,17 +1,15 @@
 
-import "../styles/globals.css";
-import "../styles/main.scss";
-
+import "@/styles/main.scss";
+import PropTypes from "prop-types";
 export const metadata = {
-  title: "Ryuzvki | Personal Portfolio",
-  description: "Full-stack developer specializing in modern web applications. Discover my projects and skills.",
+  title: "Ryuzvki Portfolio",
+  description: "IT specializing.",
   authors: [{ name: "Ryuzvki" }],
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon.ico", type: "image/x-icon" }
     ],
-    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -20,6 +18,8 @@ export const viewport = {
   initialScale: 1,
   viewportFit: "cover",
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
@@ -30,3 +30,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

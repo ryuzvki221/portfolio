@@ -18,36 +18,37 @@
       "category": ["Typscript", "HTML/SCSS", "Angular", "Ionic"],
       "group": "Web Apps"
     },
+
     {
-      "name": "Proxidoc",
-      "image": "/img/projects/Proxidoc.png",
-      "link": "https://proxidoc.herokuapp.com",
-      "code": "https://github.com/ryuzvki221/ProxiDoc/",
-      "category": ["Python", "Django", "HTML/CSS", "Bootstrap"],
-      "group": "Web Apps"
-    },
-    {
-      "name": "Quartier Sandaga",
+      "name": "Desiir",
       "image": "/img/projects/QuartierSandaga.png",
-      "link": "https://www.quartiersandaga.com",
+      "link": "#",
       "code": "#",
-      "category": ["PHP", "Wordpress", "Elementor", "WooCommerce"],
+      "category": ["PHP", "Wordpress", "Elementor", "mySql"],
       "group": "Web Apps"
     },
 
     {
-      "name": "Project Two",
+      "name": "Project 01",
       "image": "/img/projects/Exemple.jpg",
       "link": "https://ryuzvki221.github.io",
-      "code": "https://github.com/ryuzvki221/",
-      "category": ["C#", "ASP .Net", "Github Pages"],
-      "group": "Desktop Apps"
+      "code": "#",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
     },
     {
-      "name": "Project Three",
+      "name": "Project 02",
       "image": "/img/projects/Exemple.jpg",
       "link": "https://ryuzvki221.github.io",
-      "code": "https://github.com/ryuzvki221/",
+      "code": "#",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+    {
+      "name": "Project 03",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "code": "#",
       "category": ["Flutter", "Firebase"],
       "group": "Mobile Apps"
     }
