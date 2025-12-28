@@ -53,7 +53,7 @@ function HomePageContent() {
 
     const updateActiveMenu = () => {
       const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
-      
+
       // Si on est en haut de la page (moins de 200px), toujours activer Home
       if (scrollY < 200) {
         setActiveMenu(0);
@@ -67,7 +67,7 @@ function HomePageContent() {
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
         const distance = Math.abs(rect.top);
-        
+
         // Si la section est visible (pas complètement hors de vue)
         if (rect.top < window.innerHeight && rect.bottom > 0) {
           if (distance < closestDistance) {
@@ -85,7 +85,7 @@ function HomePageContent() {
 
     // Écouter le scroll
     window.addEventListener("scroll", updateActiveMenu, { passive: true });
-    
+
     // Appel initial
     updateActiveMenu();
 
@@ -109,7 +109,7 @@ function HomePageContent() {
     <>
 
       <LanguageSwitcher />
-
+      <DownloadButton />
       <header className="header">
         <ul id="menu" className="icon-menu">
           {menuItems.map((item, index) => (
@@ -126,16 +126,14 @@ function HomePageContent() {
             </li>
           ))}
         </ul>
-
       </header>
 
-      
-        <DownloadButton />
+
 
       <Hero />
       <About />
       <Service />
-      <Technology /> 
+      <Technology />
       <Education />
       <Portfolio />
       <Blog />
