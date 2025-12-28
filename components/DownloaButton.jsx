@@ -60,6 +60,15 @@ export default function DownloadButton() {
           color: #ffffff;
         }
 
+         @media (max-width: 991px) {
+          .download-button {
+            width: 48px;
+            height: 48px;
+            top: 10px;
+            left: 24px;
+          }
+        }
+
         @keyframes pulse {
           0% {
             box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4);

@@ -9,14 +9,14 @@
   width: 340px;
   min-height: 220px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   padding: 24px;
   background: #fff;
   transition: box-shadow 0.2s;
-  
+
   &:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .pub-title {
@@ -27,7 +27,6 @@
   }
 
   .pub-authors {
-    
     font-size: 0.95rem;
     color: #666;
     margin-bottom: 6px;
@@ -43,7 +42,7 @@
 .publication-modal-bg {
   position: fixed;
   inset: 0;
-  background: rgba(20,20,20,0.92);
+  background: rgba(20, 20, 20, 0.92);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,10 +57,10 @@
   max-width: 1200px;
   width: 98vw;
   padding: 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
   position: relative;
   color: #fff;
-  animation: modalNetflixIn 0.35s cubic-bezier(0.4,0,0.2,1);
+  animation: modalNetflixIn 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
 
@@ -69,7 +68,7 @@
     position: absolute;
     top: 18px;
     right: 18px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     font-size: 28px;
     cursor: pointer;
@@ -77,7 +76,7 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
     transition: background 0.2s;
   }
 
@@ -93,6 +92,11 @@
       font-weight: 700;
       margin-bottom: 12px;
       letter-spacing: 0.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      display: block;
     }
 
     .modal-authors {
@@ -114,6 +118,12 @@
       margin-bottom: 18px;
       line-height: 1.6;
       text-align: justify;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      max-width: 100%;
     }
 
     .modal-keywords {
@@ -132,21 +142,46 @@
 }
 
 @keyframes modalNetflixIn {
-  0% { transform: scale(0.85) translateY(40px); opacity: 0; }
-  100% { transform: scale(1) translateY(0); opacity: 1; }
+  0% {
+    transform: scale(0.85) translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 /* Responsive */
 @media (max-width: 1300px) {
-  .publication-modal { max-width: 98vw; }
+  .publication-modal {
+    max-width: 98vw;
+  }
 }
 
 @media (max-width: 900px) {
-  .publication-modal .modal-content { padding: 32px 12px 24px 12px; max-width: 100vw; }
+  .publication-modal .modal-content {
+    padding: 32px 12px 24px 12px;
+    max-width: 100vw;
+  }
 }
 
 @media (max-width: 600px) {
-  .publication-modal { border-radius: 8px; }
-  .publication-modal .modal-content { padding: 18px 2vw 16px 2vw; }
-  .publication-modal .modal-title { font-size: 1.2rem; }
+  .publication-modal {
+    border-radius: 8px;
+  }
+  .publication-modal .modal-content {
+    padding: 16px 2vw 16px 2vw;
+  }
+  .publication-modal .modal-title {
+    font-size: 0.9rem;
+  }
+
+  //truncate abstract for small screens
+  .publication-modal .modal-abstract {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
