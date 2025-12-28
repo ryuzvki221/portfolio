@@ -28,8 +28,8 @@ function HomePageContent() {
     { id: "service-section", icon: "fa fa-coffee", label: t("menu.skills") },
     { id: "technologies-section", icon: "fa fa-gears", label: t("menu.technologies") },
     { id: "education-section", icon: "fa fa-graduation-cap", label: t("menu.education") },
-    { id: "portfolio-section", icon: "fa fa-briefcase", label: t("menu.portfolio") },
-    { id: "blog-section", icon: "fa fa-comments", label: t("menu.blog") },
+    { id: "portfolio-section", icon: "fa fa-briefcase", label: t("menu.projects") },
+    { id: "blog-section", icon: "fa fa-comments", label: t("menu.publications") },
   ];
 
   useEffect(() => {
