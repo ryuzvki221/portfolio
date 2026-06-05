@@ -1,0 +1,51 @@
+{
+  "id": "publication-section",
+  "title": "Publications",
+  "data": [
+    {
+      "title": "SafetilBERT : un LLM efficace et explicable pour la classification des attaques IoMT",
+      "abstract": "L’adoption rapide des appareils de l’Internet des objets médicaux (IoMT) a amélioré la prise en charge des patients, mais introduit aussi des vulnérabilités et une exposition accrue aux cyberattaques, notamment les attaques par déni de service (DoS). Cet article explore le potentiel des grands modèles de langage (LLM) pour détecter et classer les attaques réseau IoMT, en mettant l’accent sur les techniques d’explicabilité afin de répondre à l’aspect boîte noire de ces modèles. À partir du jeu de données CICIoMT2024, nous présentons SafetilBERT, un modèle DistilBERT affiné et spécialisé dans la cybersécurité IoMT. SafetilBERT atteint des performances de pointe avec un score de 96,94 %, surpassant nettement BERT et RoBERTa, en particulier pour la détection des attaques DoS. Des méthodes d’explicabilité telles que Local Interpretable Model-agnostic Explanations (LIME), SHapley Additive explanations (SHAP) et la visualisation de l’attention ont été utilisées pour interpréter les caractéristiques clés influençant les prédictions du modèle. Nos résultats montrent que SafetilBERT est efficace et adaptable aux données réseau, notamment aux fichiers de capture de paquets (PCAP). Son explicabilité ouvre la voie à des solutions robustes de cybersécurité IoMT applicables dans des scénarios réels.",
+      "keywords": [
+        "Modèles d’adaptation",
+        "Scalabilité",
+        "Grands modèles de langage",
+        "Visualisation de données",
+        "Internet des objets médicaux",
+        "Modèles prédictifs",
+        "Attaque par déni de service",
+        "Systèmes temps réel",
+        "Cybercriminalité",
+        "Résilience"
+      ],
+      "authors": [
+        "Mamadou Niang, Haïfa Nakouri, Fehmi Jaafar"
+      ],
+      "publication_date": "2025-08-26",
+      "link": "https://ieeexplore.ieee.org/document/11130122",
+      "doi": "10.1109/CSR64739.2025.11130122",
+      "venue": "2025 IEEE International Conference on Cyber Security and Resilience (CSR)",
+      "type": "Article de conférence"
+    },
+    {
+      "title": "Apprentissage fédéré sécurisé post-quantique : évaluation empirique sur la détection d’objets",
+      "abstract": "L’apprentissage fédéré permet d’entraîner des modèles de manière collaborative sans partager les données brutes, mais il reste vulnérable aux attaques par inférence qui peuvent révéler des informations sensibles à partir des mises à jour agrégées. Ce travail propose un cadre d’apprentissage fédéré sécurisé intégrant la cryptographie post-quantique. L’approche utilise l’algorithme d’encapsulation de clé Kyber pour établir des clés résistantes au quantique, combiné à une agrégation sécurisée des gradients afin de protéger les mises à jour locales. Les résultats expérimentaux évaluent la protection de la vie privée et les performances du modèle dans un contexte adversarial. Ils montrent que la méthode proposée améliore la sécurité et la confidentialité tout en conservant des performances comparables au modèle de référence.",
+      "keywords": [
+        "Apprentissage fédéré",
+        "Cryptographie post-quantique",
+        "Détection d’objets",
+        "Agrégation sécurisée des données",
+        "Cryptographie résistante au quantique",
+        "Sécurité et confidentialité en apprentissage automatique"
+      ],
+      "authors": [
+        "Mamadou Niang, Mamadou Aliou Maimouna Diallo, Fehmi Jaafar, Haïfa Nakouri"
+      ],
+      "publication_date": "Accepted for publication in 2026",
+      "link": "#",
+      "doi": "#",
+      "venue": "International Conference on Electrical, Communication and Mechatronics Engineering (ICECME 2026)",
+      "type": "Article de conférence"
+    }
+
+  ]
+}

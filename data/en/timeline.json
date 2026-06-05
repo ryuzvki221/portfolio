@@ -1,0 +1,69 @@
+{
+  "id": "timeline-section",
+  "experience": [
+    {
+      "tag": "Helix Technology",
+      "title": "Software Developer",
+      "description": [
+        "✔ Work with the development team to identify and implement software solutions.",
+        "✔ Developing & maintaining web apps/websites using Wordpress, Angular, Cpanel  & Firebase.",
+        "✔ Building mobile apps with Ionic."
+      ],
+      "period": "Jan. 2021 -- Dec. 2021",
+      "position": "left"
+    },
+    {
+      "tag": "Senelec",
+      "title": "Trainee Computer Technician",
+      "description": [
+        "✔ Supervision, helpdesk and support services.",
+        "✔ Computer maintenance.",
+        "✔ Software and operating system administration.",
+        "✔ Installation and maintenance of computer networks.",
+        "✔ Write a daily report."
+      ],
+      "period": " Jun. 2018 -- Aug. 2018",
+      "position": "right"
+    }
+  ],
+  "certification": [
+    {
+      "tag": "ForceN",
+      "title": "Professional license in application design and development"
+    },
+    {
+      "tag": "Coursera",
+      "title": "Bachelor's degree in computer science"
+    },
+    {
+      "tag": "Oracle",
+      "title": "Diploma in computer science"
+    }
+  ],
+  "education": [
+    {
+      "tag": "Université du Québec à Chicoutimi (UQAC)",
+      "title": "Master’s Degree in Computer Science (Research)",
+      "period": "2023 – 2025",
+      "position": "left"
+    },
+    {
+      "tag": "Université Iba Der Thiam de Thiès",
+      "title": "Master’s Degree in Software Engineering",
+      "period": "2020 – 2022",
+      "position": "right"
+    },
+    {
+      "tag": "Cheikh Anta Diop University of Dakar (UCAD)",
+      "title": "Bachelor’s Degree in Software Engineering and Information Systems",
+      "period": "2019 – 2020",
+      "position": "left"
+    },
+    {
+      "tag": "Senegal/Japan Professional and Technical Training Center (CFPT)",
+      "title": "Higher National Diploma in Industrial Computing and Networks",
+      "period": "2016 – 2019",
+      "position": "right"
+    }
+  ]
+}

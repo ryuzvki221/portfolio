@@ -1,0 +1,56 @@
+{
+  "id": "portfolio-section",
+  "title": "Projets",
+  "data": [
+    {
+      "name": "Senanime",
+      "image": "/img/projects/Senanime.png",
+      "link": "https://senanime.vercel.app/",
+      "code": "https://github.com/ryuzvki221/",
+      "category": ["TypeScript", "HTML/SCSS", "Angular", "Material Design"],
+      "group": "Web Apps"
+    },
+
+    {
+      "name": "Desiir",
+      "image": "/img/projects/desiir.png",
+      "link": "https://desiir.uqac.ca/",
+      "code": "#",
+      "category": ["PHP", "WordPress", "Elementor", "MySQL"],
+      "group": "Web Apps"
+    },
+        {
+      "name": "Portail Desiir",
+      "image": "/img/projects/desiir-portal.png",
+      "link": "https://desiir.uqac.ca/",
+      "code": "#",
+      "category": ["JavaScript", "React js", "PostgreSQL", "LLM", "RAG", "Elasticsearch"],
+      "group": "Web Apps"
+    },
+    {
+      "name": "Projet 01",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "code": "#",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+    {
+      "name": "Projet 02",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "code": "#",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    },
+        {
+      "name": "Projet 03",
+      "image": "/img/projects/Exemple.jpg",
+      "link": "https://ryuzvki221.github.io",
+      "code": "#",
+      "category": ["Flutter", "Firebase"],
+      "group": "Mobile Apps"
+    }
+
+  ]
+}
