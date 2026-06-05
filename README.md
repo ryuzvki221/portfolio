@@ -22,7 +22,6 @@ Portfolio personnel moderne, minimaliste et multilingue (FR/EN) avec Next.js 15 
 - 🎭 **AOS** - Animations au scroll
 - 📊 **Google Analytics** & **GTM**
 - 📱 **100% Responsive**
-- 🚀 **Performance optimale**
 
 ## 🚀 Démarrage rapide
 
